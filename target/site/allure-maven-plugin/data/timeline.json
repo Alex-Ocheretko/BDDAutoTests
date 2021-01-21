@@ -1,0 +1,185 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "alex-ThinkPad-L540",
+    "children" : [ {
+      "name" : "20884@alex-ThinkPad-L540.pool-1-thread-1(18)",
+      "children" : [ {
+        "name" : "When Customer hovers the mouse cursor over \"smartphones, TV and electronics\" in the product catalog, which is located on the left side of the page",
+        "uid" : "49c0a1ab60d9d548",
+        "parentUid" : "680d62c33ef97aded7a8732f0c4a149b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1611231646428,
+          "stop" : 1611231647390,
+          "duration" : 962
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Given Customer open site​",
+        "uid" : "c0ae97ff3e02fbe1",
+        "parentUid" : "680d62c33ef97aded7a8732f0c4a149b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1611231653464,
+          "stop" : 1611231657949,
+          "duration" : 4485
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "And Customer klick submit",
+        "uid" : "175208ee0e381f7a",
+        "parentUid" : "680d62c33ef97aded7a8732f0c4a149b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1611231660614,
+          "stop" : 1611231661168,
+          "duration" : 554
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "When Customer clicks the cart on the header",
+        "uid" : "2e533dc68ad1ea5e",
+        "parentUid" : "680d62c33ef97aded7a8732f0c4a149b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1611231650696,
+          "stop" : 1611231651824,
+          "duration" : 1128
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "And Write '<password>'",
+        "uid" : "b21550a79d8376c1",
+        "parentUid" : "680d62c33ef97aded7a8732f0c4a149b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1611231659844,
+          "stop" : 1611231660612,
+          "duration" : 768
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Given Customer open site",
+        "uid" : "fd7dc3f807e68b9",
+        "parentUid" : "680d62c33ef97aded7a8732f0c4a149b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1611231639874,
+          "stop" : 1611231646388,
+          "duration" : 6514
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "When Customer clicks the cart on the first product",
+        "uid" : "ce4a5668fbe18bf5",
+        "parentUid" : "680d62c33ef97aded7a8732f0c4a149b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1611231648329,
+          "stop" : 1611231650691,
+          "duration" : 2362
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Then Customer see '<userName>' on home page",
+        "uid" : "84600f3bf81a773e",
+        "parentUid" : "680d62c33ef97aded7a8732f0c4a149b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1611231661173,
+          "stop" : 1611231661591,
+          "duration" : 418
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "When Customer clicks \"Smartphones\"",
+        "uid" : "e657575e61a4ac7c",
+        "parentUid" : "680d62c33ef97aded7a8732f0c4a149b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1611231647398,
+          "stop" : 1611231648323,
+          "duration" : 925
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Then Customer sees the selected product in the cart",
+        "uid" : "afd0c20632b953df",
+        "parentUid" : "680d62c33ef97aded7a8732f0c4a149b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1611231651828,
+          "stop" : 1611231653077,
+          "duration" : 1249
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "When Customer click log in",
+        "uid" : "9a47fee1091b2563",
+        "parentUid" : "680d62c33ef97aded7a8732f0c4a149b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1611231657953,
+          "stop" : 1611231658730,
+          "duration" : 777
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "And Customer write '<mail>'",
+        "uid" : "8c4372c23e18a333",
+        "parentUid" : "680d62c33ef97aded7a8732f0c4a149b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1611231658745,
+          "stop" : 1611231659841,
+          "duration" : 1096
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "680d62c33ef97aded7a8732f0c4a149b"
+    }, {
+      "name" : "20884@alex-ThinkPad-L540.main(1)",
+      "children" : [ {
+        "name" : "AfterStories",
+        "uid" : "ecf41c1b37829b69",
+        "parentUid" : "5e5954152c9e9f5f755a76bdfa462243",
+        "status" : "passed",
+        "time" : {
+          "start" : 1611231661805,
+          "stop" : 1611231664089,
+          "duration" : 2284
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "BeforeStories",
+        "uid" : "2093cbcd33cfb26",
+        "parentUid" : "5e5954152c9e9f5f755a76bdfa462243",
+        "status" : "passed",
+        "time" : {
+          "start" : 1611231639402,
+          "stop" : 1611231639448,
+          "duration" : 46
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5e5954152c9e9f5f755a76bdfa462243"
+    } ],
+    "uid" : "ca244ebc4bcccc0fc5f2f0093f1ed2c9"
+  } ]
+}

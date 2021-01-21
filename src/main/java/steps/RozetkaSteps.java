@@ -3,11 +3,13 @@ package steps;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
 import page_object.MainPage;
+import page_object.SmartphonesPage;
 
 public class RozetkaSteps extends ScenarioSteps {
 
 
     private MainPage mainPage;
+    private SmartphonesPage smartphonesPage;
 
     @Step
     public void openSite(){
@@ -49,15 +51,18 @@ public class RozetkaSteps extends ScenarioSteps {
         mainPage.smartfonInHiddenMenuClick();
     }
 
+    @Step
     public void firstProductCurtButtonClick() {
-        mainPage.firstProductCurtButtonClick();
+        smartphonesPage.firstProductCurtButtonClick();
     }
 
+    @Step
     public void cartOnHeaderClick() {
         mainPage.cartOnHeaderClick();
     }
 
+    @Step
     public void selectedProductAvailable() {
-        mainPage.selectedProductAvailable();
+        smartphonesPage.selectedProductAvailable();
     }
 }

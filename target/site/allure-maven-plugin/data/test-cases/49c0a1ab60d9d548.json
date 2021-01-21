@@ -1,0 +1,55 @@
+{
+  "uid" : "49c0a1ab60d9d548",
+  "name" : "When Customer hovers the mouse cursor over \"smartphones, TV and electronics\" in the product catalog, which is located on the left side of the page",
+  "fullName" : "definitions.rozetka.RozetkaStepDefinitions.When Customer hovers the mouse cursor over \"smartphones, TV and electronics\" in the product catalog, which is located on the left side of the page",
+  "historyId" : "62aaddb5be1a78692f64d82d87404e94",
+  "time" : {
+    "start" : 1611231646428,
+    "stop" : 1611231647390,
+    "duration" : 962
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "definitions.rozetka"
+  }, {
+    "name" : "testClass",
+    "value" : "definitions.rozetka.RozetkaStepDefinitions"
+  }, {
+    "name" : "testMethod",
+    "value" : "When Customer hovers the mouse cursor over \"smartphones, TV and electronics\" in the product catalog, which is located on the left side of the page"
+  }, {
+    "name" : "suite",
+    "value" : "definitions.rozetka.RozetkaStepDefinitions"
+  }, {
+    "name" : "host",
+    "value" : "alex-ThinkPad-L540"
+  }, {
+    "name" : "thread",
+    "value" : "20884@alex-ThinkPad-L540.pool-1-thread-1(18)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "49c0a1ab60d9d548.json",
+  "parameterValues" : [ ]
+}

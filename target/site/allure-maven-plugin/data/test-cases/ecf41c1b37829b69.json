@@ -1,0 +1,55 @@
+{
+  "uid" : "ecf41c1b37829b69",
+  "name" : "AfterStories",
+  "fullName" : "java.lang.Object.AfterStories",
+  "historyId" : "d671f0785c44cef66f17f930f9586842",
+  "time" : {
+    "start" : 1611231661805,
+    "stop" : 1611231664089,
+    "duration" : 2284
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "java.lang"
+  }, {
+    "name" : "testClass",
+    "value" : "java.lang.Object"
+  }, {
+    "name" : "testMethod",
+    "value" : "AfterStories"
+  }, {
+    "name" : "suite",
+    "value" : "java.lang.Object"
+  }, {
+    "name" : "host",
+    "value" : "alex-ThinkPad-L540"
+  }, {
+    "name" : "thread",
+    "value" : "20884@alex-ThinkPad-L540.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ecf41c1b37829b69.json",
+  "parameterValues" : [ ]
+}

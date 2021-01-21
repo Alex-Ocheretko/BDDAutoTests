@@ -1,0 +1,141 @@
+[ {
+  "uid" : "2093cbcd33cfb26",
+  "name" : "BeforeStories",
+  "time" : {
+    "start" : 1611231639402,
+    "stop" : 1611231639448,
+    "duration" : 46
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fd7dc3f807e68b9",
+  "name" : "Given Customer open site",
+  "time" : {
+    "start" : 1611231639874,
+    "stop" : 1611231646388,
+    "duration" : 6514
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2e533dc68ad1ea5e",
+  "name" : "When Customer clicks the cart on the header",
+  "time" : {
+    "start" : 1611231650696,
+    "stop" : 1611231651824,
+    "duration" : 1128
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e657575e61a4ac7c",
+  "name" : "When Customer clicks \"Smartphones\"",
+  "time" : {
+    "start" : 1611231647398,
+    "stop" : 1611231648323,
+    "duration" : 925
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c0ae97ff3e02fbe1",
+  "name" : "Given Customer open site​",
+  "time" : {
+    "start" : 1611231653464,
+    "stop" : 1611231657949,
+    "duration" : 4485
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b21550a79d8376c1",
+  "name" : "And Write '<password>'",
+  "time" : {
+    "start" : 1611231659844,
+    "stop" : 1611231660612,
+    "duration" : 768
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ce4a5668fbe18bf5",
+  "name" : "When Customer clicks the cart on the first product",
+  "time" : {
+    "start" : 1611231648329,
+    "stop" : 1611231650691,
+    "duration" : 2362
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ecf41c1b37829b69",
+  "name" : "AfterStories",
+  "time" : {
+    "start" : 1611231661805,
+    "stop" : 1611231664089,
+    "duration" : 2284
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9a47fee1091b2563",
+  "name" : "When Customer click log in",
+  "time" : {
+    "start" : 1611231657953,
+    "stop" : 1611231658730,
+    "duration" : 777
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "84600f3bf81a773e",
+  "name" : "Then Customer see '<userName>' on home page",
+  "time" : {
+    "start" : 1611231661173,
+    "stop" : 1611231661591,
+    "duration" : 418
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "49c0a1ab60d9d548",
+  "name" : "When Customer hovers the mouse cursor over \"smartphones, TV and electronics\" in the product catalog, which is located on the left side of the page",
+  "time" : {
+    "start" : 1611231646428,
+    "stop" : 1611231647390,
+    "duration" : 962
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "175208ee0e381f7a",
+  "name" : "And Customer klick submit",
+  "time" : {
+    "start" : 1611231660614,
+    "stop" : 1611231661168,
+    "duration" : 554
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "afd0c20632b953df",
+  "name" : "Then Customer sees the selected product in the cart",
+  "time" : {
+    "start" : 1611231651828,
+    "stop" : 1611231653077,
+    "duration" : 1249
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8c4372c23e18a333",
+  "name" : "And Customer write '<mail>'",
+  "time" : {
+    "start" : 1611231658745,
+    "stop" : 1611231659841,
+    "duration" : 1096
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

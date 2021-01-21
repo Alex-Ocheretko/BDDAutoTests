@@ -32,21 +32,9 @@ public class MainPage extends PageObject {
     @FindBy(xpath = "//a[contains(@href,'preset=smartfon')]")
     private WebElementFacade smartfonInHiddenMenu;
 
-    @FindBy(xpath = "//rz-grid//li[1]//div[1]//a[@class='goods-tile__heading']")
-    private WebElementFacade firstProduct;
-
-    @FindBy(xpath = "//li[1]//button[@class='buy-button goods-tile__buy-button']")
-    private WebElementFacade firstProductCurtButton;
-
-
     @FindBy(xpath = "//li[@class='header-actions__item header-actions__item_type_cart']")
     private WebElementFacade cartOnHeader;
 
-    @FindBy(xpath = "//a[@class='cart-product__title']")
-    private WebElementFacade selectedProduct;
-
-    @FindBy(xpath = "//button[@class=\'modal__close\']")
-    private WebElementFacade closeCartButton;
 
     @WhenPageOpens
     public void maximiseScreen() {
@@ -85,19 +73,9 @@ public class MainPage extends PageObject {
         smartfonInHiddenMenu.click();
     }
 
-    public void firstProductCurtButtonClick() {
-        firstProductCurtButton.click();
-    }
 
     public void cartOnHeaderClick() {
         cartOnHeader.click();
     }
 
-    public void selectedProductAvailable() {
-        String selectedProductName = selectedProduct.getText();
-        closeCartButton.click();
-        String firstProductName = firstProduct.getText();
-//        Assert.assertEquals(selectedProductName,firstProductName);
-        assertThat(firstProductName).startsWith(selectedProductName);
-    }
 }
