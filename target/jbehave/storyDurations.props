@@ -1,0 +1,6 @@
+#org.jbehave.core.embedder.StoryManager
+#Thu Jan 21 10:07:15 EET 2021
+total=21000
+stories.rozetka/RozetkaTests.story=21000
+threadAverage=21000
+threads=1

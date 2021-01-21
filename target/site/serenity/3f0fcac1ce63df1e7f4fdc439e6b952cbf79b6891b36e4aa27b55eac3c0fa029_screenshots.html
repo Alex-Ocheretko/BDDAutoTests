@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">Rozetka</span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="38071ec4883a43b2af71604be11135c3ac6c6448cef9316b178d19784c691888.html">Rozetka Tests</a></span>
+                > <span class="truncate-60"><a
+                    href="3f0fcac1ce63df1e7f4fdc439e6b952cbf79b6891b36e4aa27b55eac3c0fa029.html">log in </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 21-01-2021 10:07</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Rozetka Tests</span>
+                                    <span class="badge tag-badge" style="">Story</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="test-case-title">
+                                <span class="success-color">log in
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given Customer open site<br>When Customer click log in<br>And Customer write '&lt;mail&gt;'<br>And Write '&lt;password&gt;'<br>And Customer klick submit<br>Then Customer see '&lt;userName&gt;' on home page</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="0e3745605c577992ac8fe7fc9e190100b76ffb7044110507eb56c6ed8045da39.png" title=" Example #1: {mail=detotaj146@econeom.com, password=ttIEpExqjQmi1, userName=Огунт Рагнаар}" width="1366"/>
+                <img src="0e3745605c577992ac8fe7fc9e190100b76ffb7044110507eb56c6ed8045da39.png" title=" Given Customer open site" width="1366"/>
+                <img src="0e3745605c577992ac8fe7fc9e190100b76ffb7044110507eb56c6ed8045da39.png" title=" Open site" width="1366"/>
+                <img src="0e3745605c577992ac8fe7fc9e190100b76ffb7044110507eb56c6ed8045da39.png" title=" Given Customer open site (completed)" width="1366"/>
+                <img src="0e3745605c577992ac8fe7fc9e190100b76ffb7044110507eb56c6ed8045da39.png" title=" When Customer click log in" width="1366"/>
+                <img src="0e3745605c577992ac8fe7fc9e190100b76ffb7044110507eb56c6ed8045da39.png" title=" Klick log in" width="1366"/>
+                <img src="c991e60af71fd92b9f572b90fc50f35c8ee0422c430e1013b4c24a43095f170d.png" title=" Klick log in" width="1366"/>
+                <img src="c991e60af71fd92b9f572b90fc50f35c8ee0422c430e1013b4c24a43095f170d.png" title=" Klick log in (completed)" width="1366"/>
+                <img src="c991e60af71fd92b9f572b90fc50f35c8ee0422c430e1013b4c24a43095f170d.png" title=" When Customer click log in (completed)" width="1366"/>
+                <img src="c991e60af71fd92b9f572b90fc50f35c8ee0422c430e1013b4c24a43095f170d.png" title=" And Customer write '{detotaj146@econeom.com}'" width="1366"/>
+                <img src="c991e60af71fd92b9f572b90fc50f35c8ee0422c430e1013b4c24a43095f170d.png" title=" Elmail write: detotaj146@econeom.com" width="1366"/>
+                <img src="d50f8175809db31d9e4676fecc1606ee88b85b6c8e813afa32ae7617b8fe48f6.png" title=" Elmail write: detotaj146@econeom.com" width="1366"/>
+                <img src="b13aa24a24a2da52fb136510f794bda36449126942c09a8145eedbbb881490fd.png" title=" Elmail write: detotaj146@econeom.com (completed)" width="1366"/>
+                <img src="b13aa24a24a2da52fb136510f794bda36449126942c09a8145eedbbb881490fd.png" title=" And Customer write '{detotaj146@econeom.com}' (completed)" width="1366"/>
+                <img src="b13aa24a24a2da52fb136510f794bda36449126942c09a8145eedbbb881490fd.png" title=" And Write '{ttIEpExqjQmi1}'" width="1366"/>
+                <img src="b13aa24a24a2da52fb136510f794bda36449126942c09a8145eedbbb881490fd.png" title=" Password write: ttIEpExqjQmi1" width="1366"/>
+                <img src="719f12432dd7f43f67ad7d6cc55dcbae2a6c1d9360e75a34aabdb1dc8492dd28.png" title=" Password write: ttIEpExqjQmi1" width="1366"/>
+                <img src="6a34a2b3e9b82c6060bdc7b1332addda6179abfec9f5f579db09e9268d2adde6.png" title=" Password write: ttIEpExqjQmi1 (completed)" width="1366"/>
+                <img src="6a34a2b3e9b82c6060bdc7b1332addda6179abfec9f5f579db09e9268d2adde6.png" title=" And Write '{ttIEpExqjQmi1}' (completed)" width="1366"/>
+                <img src="6a34a2b3e9b82c6060bdc7b1332addda6179abfec9f5f579db09e9268d2adde6.png" title=" And Customer klick submit" width="1366"/>
+                <img src="6a34a2b3e9b82c6060bdc7b1332addda6179abfec9f5f579db09e9268d2adde6.png" title=" Klick submit button" width="1366"/>
+                <img src="1b0aa6bc59784998ab80cddb6047f27910b48097f5c83fc38dfe7cc01fcc7f87.png" title=" Klick submit button" width="1366"/>
+                <img src="1b0aa6bc59784998ab80cddb6047f27910b48097f5c83fc38dfe7cc01fcc7f87.png" title=" Klick submit button (completed)" width="1366"/>
+                <img src="1b0aa6bc59784998ab80cddb6047f27910b48097f5c83fc38dfe7cc01fcc7f87.png" title=" And Customer klick submit (completed)" width="1366"/>
+                <img src="1b0aa6bc59784998ab80cddb6047f27910b48097f5c83fc38dfe7cc01fcc7f87.png" title=" Then Customer see '{Огунт Рагнаар}' on home page" width="1366"/>
+                <img src="1b0aa6bc59784998ab80cddb6047f27910b48097f5c83fc38dfe7cc01fcc7f87.png" title=" Chek user name: Огунт Рагнаар" width="1366"/>
+                <img src="805a845a454847e257a1aee897d320ebd5ecbd141be40ad44a24416eb0723e34.png" title=" Chek user name: Огунт Рагнаар (completed)" width="1366"/>
+                <img src="805a845a454847e257a1aee897d320ebd5ecbd141be40ad44a24416eb0723e34.png" title=" Then Customer see '{Огунт Рагнаар}' on home page (completed): <span class='success-color'>SUCCESS</span>" width="1366"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.48</span>
+</div>
+</body>
+</html>
