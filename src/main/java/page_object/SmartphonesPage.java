@@ -14,20 +14,12 @@ public class SmartphonesPage extends PageObject {
     @FindBy(xpath = "//li[1]//button[@class='buy-button goods-tile__buy-button']")
     private WebElementFacade firstProductCurtButton;
 
-    @FindBy(xpath = "//a[@class='cart-product__title']")
-    private WebElementFacade selectedProduct;
-
-    @FindBy(xpath = "//button[@class=\'modal__close\']")
-    private WebElementFacade closeCartButton;
+    public String getFirstProduct() {
+        return firstProduct.getText();
+    }
 
     public void firstProductCurtButtonClick() {
         firstProductCurtButton.click();
     }
 
-    public void selectedProductAvailable() {
-        String selectedProductName = selectedProduct.getText();
-        closeCartButton.click();
-        String firstProductName = firstProduct.getText();
-        assertThat(firstProductName).startsWith(selectedProductName);
-    }
 }

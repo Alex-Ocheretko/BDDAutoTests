@@ -30,9 +30,9 @@ public class RozetkaStepDefinitions {
         testSteps.passwordWrite(password);
     }
 
-    @When("Customer klick submit")
-    public void klickSubmitButton() {
-        testSteps.klickSubmitButton();
+    @When("Customer click submit")
+    public void clickSubmitButton() {
+        testSteps.clickSubmitButton();
     }
 
     @Then("Customer see '$userName' on home page")

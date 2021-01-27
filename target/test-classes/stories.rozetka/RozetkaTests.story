@@ -12,7 +12,7 @@ Given Customer open site
 When Customer click log in
 And Customer write '<mail>'
 And Write '<password>'
-And Customer klick submit
+And Customer click submit
 Then Customer see '<userName>' on home page
 
 Examples:

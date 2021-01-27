@@ -32,7 +32,7 @@ public class RozetkaSteps extends ScenarioSteps {
     }
 
     @Step
-    public void klickSubmitButton() {
+    public void clickSubmitButton() {
         mainPage.pressLogInButton();
     }
 
@@ -63,6 +63,6 @@ public class RozetkaSteps extends ScenarioSteps {
 
     @Step
     public void selectedProductAvailable() {
-        smartphonesPage.selectedProductAvailable();
+        mainPage.selectedProductAvailable();
     }
 }

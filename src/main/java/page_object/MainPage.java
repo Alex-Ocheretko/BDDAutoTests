@@ -11,6 +11,8 @@ import static org.assertj.core.api.Assertions.*;
 
 public class MainPage extends PageObject {
 
+    private SmartphonesPage smartphonesPage;
+
     @FindBy(xpath = "//p/button")
     private WebElementFacade logIn;
 
@@ -35,12 +37,24 @@ public class MainPage extends PageObject {
     @FindBy(xpath = "//li[@class='header-actions__item header-actions__item_type_cart']")
     private WebElementFacade cartOnHeader;
 
+    @FindBy(xpath = "//a[@class='cart-product__title']")
+    private WebElementFacade selectedProduct;
+
+    @FindBy(xpath = "//button[@class=\'modal__close\']")
+    private WebElementFacade closeCartButton;
 
     @WhenPageOpens
     public void maximiseScreen() {
         getDriver().manage().window().maximize();
     }
 
+    public void selectedProductAvailable() {
+
+        String selectedProductName = selectedProduct.getText();
+        closeCartButton.click();
+        String firstProductName = smartphonesPage.getFirstProduct();
+        assertThat(firstProductName).startsWith(selectedProductName);
+    }
 
     public void logInClikc() {
         logIn.click();
