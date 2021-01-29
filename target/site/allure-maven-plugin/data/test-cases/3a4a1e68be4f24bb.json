@@ -1,0 +1,65 @@
+{
+  "uid" : "3a4a1e68be4f24bb",
+  "name" : "!-- And Customer clicks the cart on the header",
+  "fullName" : "!-- And Customer clicks the cart on the header",
+  "historyId" : "adf61eff14570982267b719f74abfee7",
+  "time" : {
+    "start" : 1611923509365,
+    "stop" : 1611923509365,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "statusMessage" : "Test ignored (without reason)!",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : ""
+  }, {
+    "name" : "testClass",
+    "value" : "!-- And Customer clicks the cart on the header"
+  }, {
+    "name" : "testMethod",
+    "value" : "!-- And Customer clicks the cart on the header"
+  }, {
+    "name" : "suite",
+    "value" : "!-- And Customer clicks the cart on the header"
+  }, {
+    "name" : "host",
+    "value" : "alex-ThinkPad-L540"
+  }, {
+    "name" : "thread",
+    "value" : "34846@alex-ThinkPad-L540.pool-1-thread-1(18)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "c83e8cd465f6a8cb",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored (without reason)!",
+      "time" : {
+        "start" : 1611923509249,
+        "stop" : 1611923509249,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3a4a1e68be4f24bb.json",
+  "parameterValues" : [ ]
+}

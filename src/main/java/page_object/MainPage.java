@@ -37,29 +37,40 @@ public class MainPage extends PageObject {
     @FindBy(xpath = "//li[@class='header-actions__item header-actions__item_type_cart']")
     private WebElementFacade cartOnHeader;
 
-    @FindBy(xpath = "//a[@class='cart-product__title']")
-    private WebElementFacade selectedProduct;
+    @FindBy(xpath = "//a[@href='https://rozetka.com.ua/ua/cabinet/orders']")
+    private WebElementFacade myOrdersOnDropdownList;
 
-    @FindBy(xpath = "//button[@class=\'modal__close\']")
-    private WebElementFacade closeCartButton;
+    @FindBy(xpath = "//input")
+    private WebElementFacade searchFormOnHomePage;
+
+    @FindBy(css = "p[class='error-message']")
+    private WebElementFacade errorMessageOfWrongAmail;
+
+    @FindBy(css = "input[id='auth_pass'][class='ng-dirty ng-touched ng-invalid']")
+    private WebElementFacade errorMessageOfWrongPass;
 
     @WhenPageOpens
     public void maximiseScreen() {
         getDriver().manage().window().maximize();
     }
 
-    public void selectedProductAvailable() {
 
-        String selectedProductName = selectedProduct.getText();
-        closeCartButton.click();
-        String firstProductName = smartphonesPage.getFirstProduct();
-        assertThat(firstProductName).startsWith(selectedProductName);
+    public void hoversMouseOverUserNameOnHomePage() {
+        Actions action = new Actions(getDriver());
+        action.moveToElement(userNameOnHomePage).perform();
+    }
+
+    public void myOrdersOnDropdownListClick() {
+        myOrdersOnDropdownList.click();
+    }
+    public void hoversMouseOversearchForm() {
+        Actions action = new Actions(getDriver());
+        action.moveToElement(searchFormOnHomePage);
     }
 
     public void logInClikc() {
         logIn.click();
     }
-
     public void writeEmail(String email) {
         emeilInput.click();
         emeilInput.sendKeys(email);
@@ -87,9 +98,16 @@ public class MainPage extends PageObject {
         smartfonInHiddenMenu.click();
     }
 
-
     public void cartOnHeaderClick() {
         cartOnHeader.click();
+    }
+
+    public boolean errorMessageOfWrongAmailVisibility() {
+        return errorMessageOfWrongAmail.isVisible();
+    }
+
+    public boolean errorMessageOfWrongPassVisibility() {
+       return errorMessageOfWrongPass.isVisible();
     }
 
 }

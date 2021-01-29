@@ -35,6 +35,15 @@ public class RozetkaStepDefinitions {
         testSteps.clickSubmitButton();
     }
 
+    @Then("Customer see error massege")
+    public void errorMassegeVisibility() {
+        if (testSteps.errorMessageOfWrongAmailVisibility())
+        testSteps.errorMessageOfWrongAmailVisibility();
+        if (testSteps.errorMessageOfWrongPassVisibility()) {
+            testSteps.errorMessageOfWrongPassVisibility();
+        }
+    }
+
     @Then("Customer see '$userName' on home page")
     public void chekUserName(String name) {
         testSteps.chekUserName(name);
@@ -64,4 +73,55 @@ public class RozetkaStepDefinitions {
     public void selectedProductAvailable(){
         testSteps.selectedProductAvailable();
     }
+
+    @When("Customer presses the 'place an order' button")
+    public void pressOrderConfirmationBatton() {
+        testSteps.pressOrderConfirmationBatton();
+    }
+
+    @When("Customer selects the delivery point")
+    public void selectFirstDeliveryPoint() {
+        testSteps.selectFirstDeliveryPoint();
+    }
+
+    @When("Customer presses the order confirmation button")
+    public void pressOrderConfirmationButton(){
+        testSteps.pressOrderConfirmationButton();
+    }
+
+    @Then("Customer sees the order number")
+    public void OrderNumberAveilable() {
+        testSteps.OrderNumberAveilable();
+    }
+
+    @When("Customer hovers the mouse cursor over the username")
+    public void pressuserNameOnHomePage() {
+        testSteps.hoversMouseOveruserNameOnHomePage();
+    }
+
+    @When("clicks 'my orders'")
+    public void pressMyOrdersOnLeftBar() {
+        testSteps.pressMyOrdersOnDropdownList();
+    }
+
+    @When("clicks 'cancel order'")
+    public void pressCancelOrderButtonOfFirstProduct() {
+        testSteps.pressCancelOrderButtonOfFirstProduct();
+    }
+
+    @When("click 'yes' in the order cancellation window to confirm")
+    public void pressYesReorderConfirmWindow() {
+        testSteps.pressYesReorderConfirmWindow();
+    }
+
+    @Then("Customer sees a cancellation message in front of your order")
+    public void firstOrderStatusCheсkVisibility() {
+        testSteps.firstOrderStatusCheсkVisibility();
+    }
+
+    @Then("Castomer sees 60 orders on page")
+    public void checkQuantityOfGoodsOnSmartphonesPage() {
+        testSteps.checkQuantityOfGoodsOnSmartphonesPage();
+    }
+
 }

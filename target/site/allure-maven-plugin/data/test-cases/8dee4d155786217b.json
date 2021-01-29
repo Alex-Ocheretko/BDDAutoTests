@@ -1,0 +1,55 @@
+{
+  "uid" : "8dee4d155786217b",
+  "name" : "And Customer click submit",
+  "fullName" : "definitions.rozetka.RozetkaStepDefinitions.And Customer click submit",
+  "historyId" : "6d5c66ec16f1dd89b0757ba5ac2a1dd5",
+  "time" : {
+    "start" : 1611923507639,
+    "stop" : 1611923508230,
+    "duration" : 591
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "definitions.rozetka"
+  }, {
+    "name" : "testClass",
+    "value" : "definitions.rozetka.RozetkaStepDefinitions"
+  }, {
+    "name" : "testMethod",
+    "value" : "And Customer click submit"
+  }, {
+    "name" : "suite",
+    "value" : "definitions.rozetka.RozetkaStepDefinitions"
+  }, {
+    "name" : "host",
+    "value" : "alex-ThinkPad-L540"
+  }, {
+    "name" : "thread",
+    "value" : "34846@alex-ThinkPad-L540.pool-1-thread-1(18)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8dee4d155786217b.json",
+  "parameterValues" : [ ]
+}

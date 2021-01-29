@@ -9,35 +9,17 @@
  
 <script type="syntaxhighlighter" class="brush: xml"><![CDATA[
 <story path="stories.rozetka/RozetkaTests.story" title="">
-<scenario keyword="Scenario:" title="Adding items to cart">
+<meta>
+<property keyword="@" name="rozetka" value="tests"/>
+</meta>
+<scenario keyword="Scenario:" title="checking that the page has 60 products">
+<meta>
+<property keyword="@" name="test" value="run"/>
+</meta>
 <step outcome="successful">Given Customer open site</step>
 <step outcome="successful">When Customer hovers the mouse cursor over &quot;smartphones, TV and electronics&quot; in the product catalog, which is located on the left side of the page</step>
-<step outcome="successful">When Customer clicks &quot;Smartphones&quot;</step>
-<step outcome="successful">When Customer clicks the cart on the first product</step>
-<step outcome="successful">When Customer clicks the cart on the header</step>
-<step outcome="successful">Then Customer sees the selected product in the cart</step>
-</scenario>
-<scenario keyword="Scenario:" title="log in">
-<examples keyword="Examples:">
-<step>Given Customer open site</step>
-<step>When Customer click log in</step>
-<step>And Customer write &apos;&lt;mail&gt;&apos;</step>
-<step>And Write &apos;&lt;password&gt;&apos;</step>
-<step>And Customer klick submit</step>
-<step>Then Customer see &apos;&lt;userName&gt;&apos; on home page</step>
-<parameters>
-<names><name>mail</name><name>password</name><name>userName</name></names>
-<values><value>detotaj146@econeom.com</value><value>ttIEpExqjQmi1</value><value>Огунт Рагнаар</value></values>
-</parameters>
-
-<example keyword="Example:">{mail=detotaj146@econeom.com, password=ttIEpExqjQmi1, userName=Огунт Рагнаар}</example>
-<step outcome="successful">Given Customer open site</step>
-<step outcome="successful">When Customer click log in</step>
-<step outcome="successful">And Customer write &apos;<parameter>detotaj146@econeom.com</parameter>&apos;</step>
-<step outcome="successful">And Write &apos;<parameter>ttIEpExqjQmi1</parameter>&apos;</step>
-<step outcome="successful">And Customer klick submit</step>
-<step outcome="successful">Then Customer see &apos;<parameter>Огунт Рагнаар</parameter>&apos; on home page</step>
-</examples>
+<step outcome="successful">And Customer clicks &quot;Smartphones&quot;</step>
+<step outcome="successful">Then Castomer sees 60 orders on page</step>
 </scenario>
 </story>
 

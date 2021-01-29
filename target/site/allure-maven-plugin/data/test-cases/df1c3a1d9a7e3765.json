@@ -1,0 +1,56 @@
+{
+  "uid" : "df1c3a1d9a7e3765",
+  "name" : "[PENDING] !--​​​​​​",
+  "fullName" : "[PENDING] !--​​​​​​",
+  "historyId" : "9f6562b42ea3feb842e1a56a9b4910a7",
+  "time" : {
+    "start" : 1611923509463,
+    "stop" : 1611923509463,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "statusMessage" : "Test ignored (without reason)!",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : ""
+  }, {
+    "name" : "testClass",
+    "value" : "[PENDING] !--​​​​​​"
+  }, {
+    "name" : "testMethod",
+    "value" : "[PENDING] !--​​​​​​"
+  }, {
+    "name" : "suite",
+    "value" : "[PENDING] !--​​​​​​"
+  }, {
+    "name" : "host",
+    "value" : "alex-ThinkPad-L540"
+  }, {
+    "name" : "thread",
+    "value" : "34846@alex-ThinkPad-L540.pool-1-thread-1(18)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "df1c3a1d9a7e3765.json",
+  "parameterValues" : [ ]
+}

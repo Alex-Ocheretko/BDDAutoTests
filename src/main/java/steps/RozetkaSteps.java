@@ -2,14 +2,20 @@ package steps;
 
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
-import page_object.MainPage;
-import page_object.SmartphonesPage;
+import org.openqa.selenium.WebElement;
+import page_object.*;
+import static org.assertj.core.api.Assertions.*;
+
+
+import java.util.List;
 
 public class RozetkaSteps extends ScenarioSteps {
 
-
     private MainPage mainPage;
     private SmartphonesPage smartphonesPage;
+    private CartWindow cartWindow;
+    private MakingAnOrderPage makingAnOrderPage;
+    private UserCabinetPage userCabinetPage;
 
     @Step
     public void openSite(){
@@ -63,6 +69,77 @@ public class RozetkaSteps extends ScenarioSteps {
 
     @Step
     public void selectedProductAvailable() {
-        mainPage.selectedProductAvailable();
+        cartWindow.selectedProductAvailable();
+    }
+
+    @Step
+    public void pressOrderConfirmationBatton() {
+        makingAnOrderPage.orderConfirmationBattonClick();
+    }
+
+    @Step
+    public void selectFirstDeliveryPoint() {
+        makingAnOrderPage.selectFirstDeliveryPoint();
+    }
+
+    @Step
+    public void pressOrderConfirmationButton() {
+        makingAnOrderPage.orderConfirmationButtonClick();
+        makingAnOrderPage.reOrderButton();
+    }
+
+    @Step
+    public void OrderNumberAveilable(){
+        makingAnOrderPage.OrderNumberAveilable();
+    }
+
+    @Step
+    public void hoversMouseOveruserNameOnHomePage() {
+        mainPage.hoversMouseOverUserNameOnHomePage();
+    }
+
+    @Step
+    public void pressMyOrdersOnDropdownList() {
+        mainPage.myOrdersOnDropdownListClick();
+
+        mainPage.hoversMouseOversearchForm();
+
+    }
+
+    @Step
+    public void pressCancelOrderButtonOfFirstProduct() {
+        userCabinetPage.chevronDownButtonOfFirstProductClick();
+
+//        if (userCabinetPage.chevronDownButtonOfFirstProductVisibility()) {
+//            userCabinetPage.chevronDownButtonOfFirstProductClick();
+//        }
+        userCabinetPage.cancelOrderButtonOfFirstProductClick();
+    }
+
+    @Step
+    public void pressYesReorderConfirmWindow() {
+        userCabinetPage.yesReorderConfirmWindow();
+    }
+
+    @Step
+    public void firstOrderStatusCheсkVisibility() {
+        getDriver().navigate().refresh();
+        userCabinetPage.firstOrderStatusVisibility();
+        userCabinetPage.reorderButtonOfFirstProductVisibility();
+    }
+
+    @Step
+    public boolean errorMessageOfWrongAmailVisibility() {
+        return mainPage.errorMessageOfWrongAmailVisibility();
+    }
+
+    @Step
+    public boolean errorMessageOfWrongPassVisibility() {
+        return mainPage.errorMessageOfWrongPassVisibility();
+    }
+
+    @Step
+    public void checkQuantityOfGoodsOnSmartphonesPage() {
+        smartphonesPage.checkQuantityOfGoodsOnSmartphonesPage();
     }
 }

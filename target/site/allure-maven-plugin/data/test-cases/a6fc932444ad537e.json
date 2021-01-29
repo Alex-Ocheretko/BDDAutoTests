@@ -1,0 +1,54 @@
+{
+  "uid" : "a6fc932444ad537e",
+  "name" : "!-- When Customer click log in",
+  "fullName" : "!-- When Customer click log in",
+  "historyId" : "4da339a5a3a1b7b72f8510303b85fcce",
+  "time" : {
+    "start" : 1611923509032,
+    "stop" : 1611923509032,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "statusMessage" : "Test ignored (without reason)!",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : ""
+  }, {
+    "name" : "testClass",
+    "value" : "!-- When Customer click log in"
+  }, {
+    "name" : "testMethod",
+    "value" : "!-- When Customer click log in"
+  }, {
+    "name" : "suite",
+    "value" : "!-- When Customer click log in"
+  }, {
+    "name" : "host",
+    "value" : "alex-ThinkPad-L540"
+  }, {
+    "name" : "thread",
+    "value" : "34846@alex-ThinkPad-L540.pool-1-thread-1(18)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a6fc932444ad537e.json",
+  "parameterValues" : [ ]
+}
