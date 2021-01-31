@@ -124,4 +124,29 @@ public class RozetkaStepDefinitions {
         testSteps.checkQuantityOfGoodsOnSmartphonesPage();
     }
 
+    @When("Customer clicks the compare buttons on two firsts products")
+    public void pressCompareButtonProdacts() {
+        testSteps.pressCompareButtonOfFirstProdact();
+        testSteps.pressCompareButtonOfSecondProdact();
+    }
+
+    @When("Customer clicks the compare button on heder")
+    public void pressCompareButtonOnHeader() {
+        testSteps.pressCompareButtonOnHeader();
+    }
+
+    @Then("Customer sees the two selected orders and can comparing them")
+    public void checkingTheAvailabilityOfSelectedProducts() {
+        testSteps.checkingTheAvailabilityOfSelectedProducts();
+    }
+
+    @When("Customer sort by price in descending order")
+    public void sortByPriceDesc() {
+        testSteps.sortByPriceDesc();
+    }
+
+    @Then("goods are sorted by price increase")
+    public void checkSortingByPrice() {
+        testSteps.checkSortingByPrice();
+    }
 }

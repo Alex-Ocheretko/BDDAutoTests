@@ -2,12 +2,10 @@ package steps;
 
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
-import org.openqa.selenium.WebElement;
 import page_object.*;
+
+
 import static org.assertj.core.api.Assertions.*;
-
-
-import java.util.List;
 
 public class RozetkaSteps extends ScenarioSteps {
 
@@ -16,6 +14,7 @@ public class RozetkaSteps extends ScenarioSteps {
     private CartWindow cartWindow;
     private MakingAnOrderPage makingAnOrderPage;
     private UserCabinetPage userCabinetPage;
+    private ComparisonPage comparisonPage;
 
     @Step
     public void openSite(){
@@ -108,11 +107,9 @@ public class RozetkaSteps extends ScenarioSteps {
 
     @Step
     public void pressCancelOrderButtonOfFirstProduct() {
-        userCabinetPage.chevronDownButtonOfFirstProductClick();
-
-//        if (userCabinetPage.chevronDownButtonOfFirstProductVisibility()) {
-//            userCabinetPage.chevronDownButtonOfFirstProductClick();
-//        }
+        if (userCabinetPage.chevronDownButtonOfFirstProductVisibility()) {
+            userCabinetPage.chevronDownButtonOfFirstProductClick();
+        }
         userCabinetPage.cancelOrderButtonOfFirstProductClick();
     }
 
@@ -141,5 +138,60 @@ public class RozetkaSteps extends ScenarioSteps {
     @Step
     public void checkQuantityOfGoodsOnSmartphonesPage() {
         smartphonesPage.checkQuantityOfGoodsOnSmartphonesPage();
+    }
+
+    @Step
+    public void pressCompareButtonOfFirstProdact() {
+        smartphonesPage.compareButtonOfFirstProdactClick();
+    }
+
+    @Step
+    public void pressCompareButtonOfSecondProdact() {
+        smartphonesPage.compareButtonOfSecondProdactClick();
+    }
+
+    @Step
+    public void pressCompareButtonOnHeader() {
+        mainPage.compareButtonOnHeaderClick();
+    }
+
+    @Step
+    public void checkingTheAvailabilityOfSelectedProducts() {
+        String firstComparisonProductName = comparisonPage.getFirstComparisonProductName();
+        String secondComparisonProductName = comparisonPage.getSecondComparisonProductName();
+
+        getDriver().navigate().back();
+
+        String firstProductName = smartphonesPage.getFirstProduct();
+        String secondProductName = smartphonesPage.getSecondProduct();
+
+        assertThat(firstProductName).startsWith(firstComparisonProductName);
+        assertThat(secondProductName).startsWith(secondComparisonProductName);
+    }
+
+    @Step
+    public void sortByPriceDesc(){
+        smartphonesPage.dropDownOfSortButtonClick();
+        smartphonesPage.sortByPriceDescButtonClick();
+    }
+
+    @Step
+    public void checkSortingByPrice() {
+        boolean expected = true;
+        boolean actual = false;
+
+        for (int i = 0; i < smartphonesPage.getPriceTagsOfGoods().size()-1; i++) {
+            int first = Integer.parseInt(smartphonesPage.getPriceTagsOfGoods().get(i).getText().replaceAll("\\s+",""));
+            int second = Integer.parseInt(smartphonesPage.getPriceTagsOfGoods().get(i+1).getText().replaceAll("\\s+",""));
+            if (first >= second) {
+                if (smartphonesPage.getPriceTagsOfGoods().size()-2 == i) {
+                    actual = true;
+                }
+            } else {
+                actual = false;
+            }
+        }
+        assertThat(actual).isEqualTo(expected);
+
     }
 }

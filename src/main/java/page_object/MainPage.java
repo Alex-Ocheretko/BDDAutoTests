@@ -4,6 +4,8 @@ import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.WhenPageOpens;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 
 import static org.assertj.core.api.Assertions.*;
@@ -49,6 +51,12 @@ public class MainPage extends PageObject {
     @FindBy(css = "input[id='auth_pass'][class='ng-dirty ng-touched ng-invalid']")
     private WebElementFacade errorMessageOfWrongPass;
 
+    @FindBy(css = "button[class*='header-actions__button header-actions__button_type_compare']")
+    private WebElementFacade compareButtonOnHeader;
+
+    @FindBy(css = "li[class='comparison-modal__item']")
+    private WebElementFacade comparisonModelList;
+
     @WhenPageOpens
     public void maximiseScreen() {
         getDriver().manage().window().maximize();
@@ -63,6 +71,7 @@ public class MainPage extends PageObject {
     public void myOrdersOnDropdownListClick() {
         myOrdersOnDropdownList.click();
     }
+
     public void hoversMouseOversearchForm() {
         Actions action = new Actions(getDriver());
         action.moveToElement(searchFormOnHomePage);
@@ -71,6 +80,7 @@ public class MainPage extends PageObject {
     public void logInClikc() {
         logIn.click();
     }
+
     public void writeEmail(String email) {
         emeilInput.click();
         emeilInput.sendKeys(email);
@@ -110,4 +120,12 @@ public class MainPage extends PageObject {
        return errorMessageOfWrongPass.isVisible();
     }
 
+    public void compareButtonOnHeaderClick() {
+        compareButtonOnHeader.click();
+        comparisonModelList.click();
+    }
+
+    public String getComparisonModelListURL() {
+        return comparisonModelList.getAttribute("href");
+    }
 }

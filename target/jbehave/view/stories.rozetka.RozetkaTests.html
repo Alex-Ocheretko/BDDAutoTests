@@ -14,7 +14,7 @@
 <div class="property">@rozetka tests</div>
 </div>
 <div class="scenario">
-<h2>Scenario: checking that the page has 60 products</h2>
+<h2>Scenario: checking the possibility of sorting by price increase</h2>
 <div class="meta">
 <div class="keyword">Meta:</div>
 <div class="property">@test run</div>
@@ -22,7 +22,8 @@
 <div class="step successful">Given Customer open site</div>
 <div class="step successful">When Customer hovers the mouse cursor over &quot;smartphones, TV and electronics&quot; in the product catalog, which is located on the left side of the page</div>
 <div class="step successful">And Customer clicks &quot;Smartphones&quot;</div>
-<div class="step successful">Then Castomer sees 60 orders on page</div>
+<div class="step successful">And Customer sort by price in descending order</div>
+<div class="step successful">Then goods are sorted by price increase</div>
 </div>
 </div>
 

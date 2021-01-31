@@ -59,11 +59,12 @@ And Customer presses the order confirmation button
 Then Customer sees the order number
 
 Examples:
-|   mail                   |    password        |   userName         |
-|   detotaj146@econeom.com |    ttIEpExqjQmi1   |  Никола Питерский  |
+|   mail                   |    password        |
+|   detotaj146@econeom.com |    ttIEpExqjQmi1   |
 
 
 Scenario: checking the possibility of order cancellation
+Meta:
 Given Customer open site
 When Customer click log in
 And Customer write '<mail>'
@@ -76,29 +77,43 @@ And click 'yes' in the order cancellation window to confirm
 Then Customer sees a cancellation message in front of your order
 
 Examples:
-|   mail                   |    password        |   userName         |
-|   detotaj146@econeom.com |    ttIEpExqjQmi1   |  Никола Питерский  |
+|   mail                   |    password        |
+|   detotaj146@econeom.com |    ttIEpExqjQmi1   |
 
 
 
 Scenario: checking that the page has 60 products
-Meta:  @test run
+Meta:
 Given Customer open site
 When Customer hovers the mouse cursor over "smartphones, TV and electronics" in the product catalog, which is located on the left side of the page
 And Customer clicks "Smartphones"
 Then Castomer sees 60 orders on page
 
-
-
-
-
 Scenario: checking the possibility of sorting by price increase
+Meta: @test run
 Given Customer open site
+When Customer hovers the mouse cursor over "smartphones, TV and electronics" in the product catalog, which is located on the left side of the page
+And Customer clicks "Smartphones"
+And Customer sort by price in descending order
+Then goods are sorted by price increase
 
 Scenario: checking the work of comparing goods
+Meta:
 Given Customer open site
+When Customer click log in
+And Customer write '<mail>'
+And Write '<password>'
+And Customer click submit
+And Customer hovers the mouse cursor over "smartphones, TV and electronics" in the product catalog, which is located on the left side of the page
+And Customer clicks "Smartphones"
+And Customer clicks the compare buttons on two firsts products
+And Customer clicks the compare button on heder
+Then Customer sees the two selected orders and can comparing them
 
-Scenario: checking the possibility of opening the necessary goods
-Given Customer open site
+Examples:
+|   mail                   |    password        |
+|   detotaj146@econeom.com |    ttIEpExqjQmi1   |
+
+
 
 

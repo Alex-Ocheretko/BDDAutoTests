@@ -2,13 +2,14 @@
 <meta>
 <property keyword="@" name="rozetka" value="tests"/>
 </meta>
-<scenario keyword="Scenario:" title="checking that the page has 60 products">
+<scenario keyword="Scenario:" title="checking the possibility of sorting by price increase">
 <meta>
 <property keyword="@" name="test" value="run"/>
 </meta>
 <step outcome="successful">Given Customer open site</step>
 <step outcome="successful">When Customer hovers the mouse cursor over &quot;smartphones, TV and electronics&quot; in the product catalog, which is located on the left side of the page</step>
 <step outcome="successful">And Customer clicks &quot;Smartphones&quot;</step>
-<step outcome="successful">Then Castomer sees 60 orders on page</step>
+<step outcome="successful">And Customer sort by price in descending order</step>
+<step outcome="successful">Then goods are sorted by price increase</step>
 </scenario>
 </story>
