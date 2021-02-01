@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: definitions.RozetkaAllTests
--------------------------------------------------------------------------------
-Tests run: 58, Failures: 0, Errors: 0, Skipped: 50, Time elapsed: 18.631 s - in definitions.RozetkaAllTests

@@ -1,6 +1,0 @@
-page_object/UserCabinetPage.class
-steps/RozetkaSteps.class
-page_object/SmartphonesPage.class
-page_object/CartWindow.class
-page_object/MainPage.class
-page_object/MakingAnOrderPage.class
