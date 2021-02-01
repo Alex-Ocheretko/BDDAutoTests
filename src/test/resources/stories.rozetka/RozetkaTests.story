@@ -65,7 +65,6 @@ Examples:
 
 
 Scenario: checking the possibility of order cancellation
-Meta:
 Given Customer open site
 When Customer click log in
 And Customer write '<mail>'
@@ -84,14 +83,12 @@ Examples:
 
 
 Scenario: checking that the page has 60 products
-Meta:
 Given Customer open site
 When Customer hovers the mouse cursor over "smartphones, TV and electronics" in the product catalog, which is located on the left side of the page
 And Customer clicks "Smartphones"
 Then Castomer sees 60 orders on page
 
 Scenario: checking the possibility of sorting by price increase
-Meta:
 Given Customer open site
 When Customer hovers the mouse cursor over "smartphones, TV and electronics" in the product catalog, which is located on the left side of the page
 And Customer clicks "Smartphones"
@@ -99,7 +96,6 @@ And Customer sort by price in descending order
 Then goods are sorted by price increase
 
 Scenario: checking the work of comparing goods
-Meta:
 Given Customer open site
 When Customer click log in
 And Customer write '<mail>'

@@ -17,7 +17,7 @@ public class RozetkaStepDefinitions {
 
     @When("Customer click log in")
     public void clickLogIn() {
-        testSteps.klickLogIn();
+        testSteps.clickLogIn();
     }
 
     @When("Customer write '$mail'")
@@ -38,7 +38,7 @@ public class RozetkaStepDefinitions {
     @Then("Customer see error massege")
     public void errorMassegeVisibility() {
         if (testSteps.errorMessageOfWrongAmailVisibility())
-        testSteps.errorMessageOfWrongAmailVisibility();
+            testSteps.errorMessageOfWrongAmailVisibility();
         if (testSteps.errorMessageOfWrongPassVisibility()) {
             testSteps.errorMessageOfWrongPassVisibility();
         }

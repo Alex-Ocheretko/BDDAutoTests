@@ -2,7 +2,7 @@ package steps;
 
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
-import page_object.*;
+import pageObject.*;
 
 
 import java.util.regex.Matcher;
@@ -25,7 +25,7 @@ public class RozetkaSteps extends ScenarioSteps {
     }
 
     @Step
-    public void klickLogIn() {
+    public void clickLogIn() {
         mainPage.logInClikc();
     }
 
@@ -98,11 +98,10 @@ public class RozetkaSteps extends ScenarioSteps {
     @Step
     public void getOrderNumber() {
         String orderNumber = makingAnOrderPage.getOrderNumber();
-        System.out.println(orderNumber);
         Pattern pattern = Pattern.compile("[а-яА-Я]+\\s[0-9]{9}");
         Matcher matcher = pattern.matcher(orderNumber);
         boolean actual = matcher.matches();
-        assertThat(actual).isEqualTo(true);
+        assertThat(actual).isTrue();
     }
 
     @Step
