@@ -90,8 +90,9 @@ public class RozetkaStepDefinitions {
     }
 
     @Then("Customer sees the order number")
-    public void OrderNumberAveilable() {
-        testSteps.OrderNumberAveilable();
+    public void OrderNumberAvailable() {
+//        testSteps.orderNumberAvailable();
+        testSteps.getOrderNumber();
     }
 
     @When("Customer hovers the mouse cursor over the username")

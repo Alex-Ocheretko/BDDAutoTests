@@ -20,7 +20,7 @@ public class MakingAnOrderPage extends PageObject {
     @FindBy(xpath = "//button[@class='button button--green button--large checkout-total__submit']")
     private WebElementFacade orderConfirmationButton;
 
-    @FindBy(xpath = "//h2[@class='checkout-order__heading']")
+    @FindBy(css = "section>div>h2[class*='checkout-order']")
     private WebElementFacade orderNumber;
 
     @FindBy(xpath = "//button[@class='button button--medium button--navy']")
@@ -43,8 +43,12 @@ public class MakingAnOrderPage extends PageObject {
         orderConfirmationButton.click();
     }
 
-    public void OrderNumberAveilable() {
+    public void orderNumberAvailable() {
         orderNumber.isVisible();
+    }
+
+    public String getOrderNumber(){
+       return orderNumber.getText();
     }
 
     public void reOrderButton() {

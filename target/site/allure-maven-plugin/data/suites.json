@@ -5,7 +5,7 @@
     "name" : "java.lang.Object",
     "children" : [ {
       "name" : "BeforeStories",
-      "uid" : "c0b7bc5f7031b4ca",
+      "uid" : "97dbb15527fc90a6",
       "parentUid" : "d5f911955b1d143ae39ef64fe670abd3",
       "status" : "passed",
       "time" : {
@@ -17,7 +17,7 @@
       "parameters" : [ ]
     }, {
       "name" : "AfterStories",
-      "uid" : "3996208d793e2e80",
+      "uid" : "62b5f5cd6b0d82ba",
       "parentUid" : "d5f911955b1d143ae39ef64fe670abd3",
       "status" : "passed",
       "time" : {
@@ -33,7 +33,7 @@
     "name" : "definitions.rozetka.RozetkaStepDefinitions",
     "children" : [ {
       "name" : "Given Customer open site",
-      "uid" : "9a9e9588c455f428",
+      "uid" : "2402ccc87b97c0e3",
       "parentUid" : "bf70c09caa593b9eddb6ab772f89474e",
       "status" : "passed",
       "time" : {
@@ -45,7 +45,7 @@
       "parameters" : [ ]
     }, {
       "name" : "When Customer click log in",
-      "uid" : "ec400d36c5aec2b3",
+      "uid" : "e0df7955f95caf5b",
       "parentUid" : "bf70c09caa593b9eddb6ab772f89474e",
       "status" : "passed",
       "time" : {
@@ -57,7 +57,7 @@
       "parameters" : [ ]
     }, {
       "name" : "And Customer write '<mail>'",
-      "uid" : "86ef5530fe299c8a",
+      "uid" : "b8fd25d848bc435b",
       "parentUid" : "bf70c09caa593b9eddb6ab772f89474e",
       "status" : "passed",
       "time" : {
@@ -69,7 +69,7 @@
       "parameters" : [ ]
     }, {
       "name" : "And Write '<password>'",
-      "uid" : "73a039d4b9def16b",
+      "uid" : "9177f020b53fad",
       "parentUid" : "bf70c09caa593b9eddb6ab772f89474e",
       "status" : "passed",
       "time" : {
@@ -81,7 +81,7 @@
       "parameters" : [ ]
     }, {
       "name" : "And Customer click submit",
-      "uid" : "8dee4d155786217b",
+      "uid" : "2e39634eef15f61b",
       "parentUid" : "bf70c09caa593b9eddb6ab772f89474e",
       "status" : "passed",
       "time" : {
@@ -93,7 +93,7 @@
       "parameters" : [ ]
     }, {
       "name" : "Then Customer see '<userName>' on home page",
-      "uid" : "4c604f70e9c8ebb9",
+      "uid" : "64f075ce1efe86fb",
       "parentUid" : "bf70c09caa593b9eddb6ab772f89474e",
       "status" : "passed",
       "time" : {
@@ -109,7 +109,7 @@
     "name" : "[PENDING] !--",
     "children" : [ {
       "name" : "[PENDING] !--",
-      "uid" : "7e70a59a9d2ca379",
+      "uid" : "3b273c84a9c4192a",
       "parentUid" : "93f94df6a22205e03889c4b177923658",
       "status" : "skipped",
       "time" : {
@@ -125,7 +125,7 @@
     "name" : "!-- Then Customer see error massege",
     "children" : [ {
       "name" : "!-- Then Customer see error massege",
-      "uid" : "bbf87d8112039af6",
+      "uid" : "1f2a6fbf7c20acba",
       "parentUid" : "6a55b3750233164f1676191fd9956151",
       "status" : "skipped",
       "time" : {
@@ -141,7 +141,7 @@
     "name" : "[PENDING] !--​",
     "children" : [ {
       "name" : "[PENDING] !--​",
-      "uid" : "33fb7f239235a0f8",
+      "uid" : "3db1fba55c853fb9",
       "parentUid" : "2ceb1291deec1e6a46bc95779ec50ec8",
       "status" : "skipped",
       "time" : {
@@ -157,7 +157,7 @@
     "name" : "[PENDING] !--​​",
     "children" : [ {
       "name" : "[PENDING] !--​​",
-      "uid" : "ae1e1c3dfe97819e",
+      "uid" : "5639c49ba650d5aa",
       "parentUid" : "1bb257ffec362acf0cf8a5828db8f9df",
       "status" : "skipped",
       "time" : {
@@ -173,7 +173,7 @@
     "name" : "!-- When Customer hovers the mouse cursor over \"smartphones, TV and electronics\" in the product catalog, which is located on the left side of the page",
     "children" : [ {
       "name" : "!-- When Customer hovers the mouse cursor over \"smartphones, TV and electronics\" in the product catalog, which is located on the left side of the page",
-      "uid" : "a8a444e9b9b7079d",
+      "uid" : "42a42bc634eb06f1",
       "parentUid" : "5c9e5c50e680455d56fe2ab70147da51",
       "status" : "skipped",
       "time" : {
@@ -189,7 +189,7 @@
     "name" : "!-- Then Customer sees the selected product in the cart",
     "children" : [ {
       "name" : "!-- Then Customer sees the selected product in the cart",
-      "uid" : "53fb8ce990e7401f",
+      "uid" : "41431e23c842038f",
       "parentUid" : "bb14bab25516bc035fc0d6e3eb9cee5c",
       "status" : "skipped",
       "time" : {
@@ -205,7 +205,7 @@
     "name" : "[PENDING] !--​​​",
     "children" : [ {
       "name" : "[PENDING] !--​​​",
-      "uid" : "c541b1bbf8b81223",
+      "uid" : "a6a19da03a00db7",
       "parentUid" : "008b4ed9b24013c3251326d40718e394",
       "status" : "skipped",
       "time" : {
@@ -221,7 +221,7 @@
     "name" : "!-- And Customer hovers the mouse cursor over \"smartphones, TV and electronics\" in the product catalog, which is located on the left side of the page",
     "children" : [ {
       "name" : "!-- And Customer hovers the mouse cursor over \"smartphones, TV and electronics\" in the product catalog, which is located on the left side of the page",
-      "uid" : "2de7b4c44bc2fe12",
+      "uid" : "88db7b462439e1ac",
       "parentUid" : "cde61d6ebb8dab05499a5da39cafd537",
       "status" : "skipped",
       "time" : {
@@ -237,7 +237,7 @@
     "name" : "!-- And Customer clicks \"Smartphones\"",
     "children" : [ {
       "name" : "!-- And Customer clicks \"Smartphones\"",
-      "uid" : "d513b3fe962f62b0",
+      "uid" : "873a57b693ead264",
       "parentUid" : "2c80a01ad0eefcbded24350d207116d6",
       "status" : "skipped",
       "time" : {
@@ -253,7 +253,7 @@
     "name" : "!-- And Customer clicks the cart on the first product",
     "children" : [ {
       "name" : "!-- And Customer clicks the cart on the first product",
-      "uid" : "75d07c39771d12e4",
+      "uid" : "fd629f51ad675dd7",
       "parentUid" : "36c7e8aab07d37fcf81329958202e423",
       "status" : "skipped",
       "time" : {
@@ -269,7 +269,7 @@
     "name" : "!-- And Customer clicks the cart on the header",
     "children" : [ {
       "name" : "!-- And Customer clicks the cart on the header",
-      "uid" : "3a4a1e68be4f24bb",
+      "uid" : "13bd41d45005220b",
       "parentUid" : "93f9f38d4070922957a2fd7aa674901f",
       "status" : "skipped",
       "time" : {
@@ -285,7 +285,7 @@
     "name" : "!-- And Customer presses the 'place an order' button",
     "children" : [ {
       "name" : "!-- And Customer presses the 'place an order' button",
-      "uid" : "c4f2de8fd204cae4",
+      "uid" : "57c255644ba9242d",
       "parentUid" : "8873c42de837c6d0b230b2a6189d636d",
       "status" : "skipped",
       "time" : {
@@ -301,7 +301,7 @@
     "name" : "!-- And Customer selects the delivery point",
     "children" : [ {
       "name" : "!-- And Customer selects the delivery point",
-      "uid" : "4acdd788d1db7a52",
+      "uid" : "b142b48172ba4401",
       "parentUid" : "dacc8223cfc19f76f54f5aba783f84c9",
       "status" : "skipped",
       "time" : {
@@ -317,7 +317,7 @@
     "name" : "!-- And Customer presses the order confirmation button",
     "children" : [ {
       "name" : "!-- And Customer presses the order confirmation button",
-      "uid" : "58c43bbe08cf8111",
+      "uid" : "c81c65bde2568553",
       "parentUid" : "c9417abb919b40935880552557ab0be8",
       "status" : "skipped",
       "time" : {
@@ -333,7 +333,7 @@
     "name" : "!-- Then Customer sees the order number",
     "children" : [ {
       "name" : "!-- Then Customer sees the order number",
-      "uid" : "1a0374008c172fc2",
+      "uid" : "d4361d1c5e29b952",
       "parentUid" : "dee1e8f95c5317b75eaf34c477a5ae53",
       "status" : "skipped",
       "time" : {
@@ -349,7 +349,7 @@
     "name" : "[PENDING] !--​​​​",
     "children" : [ {
       "name" : "[PENDING] !--​​​​",
-      "uid" : "735099f91ff14bb7",
+      "uid" : "161387ff17916eec",
       "parentUid" : "d461e1c3b6fb00d2ed676926fe42d0d4",
       "status" : "skipped",
       "time" : {
@@ -365,7 +365,7 @@
     "name" : "[PENDING] !--​​​​​",
     "children" : [ {
       "name" : "[PENDING] !--​​​​​",
-      "uid" : "8cbf78db7aed0be6",
+      "uid" : "45bff69f71e76c0b",
       "parentUid" : "2584f15edbee49fbe7f9177de331bcd8",
       "status" : "skipped",
       "time" : {
@@ -381,7 +381,7 @@
     "name" : "!-- When Customer click log in",
     "children" : [ {
       "name" : "!-- When Customer click log in",
-      "uid" : "9ae971b8e98d995b",
+      "uid" : "48482cf829dc678b",
       "parentUid" : "bebe90134fa5b5938ea1b70c62644bf7",
       "status" : "skipped",
       "time" : {
@@ -397,7 +397,7 @@
     "name" : "!-- And Customer write '<mail>'",
     "children" : [ {
       "name" : "!-- And Customer write '<mail>'",
-      "uid" : "74dce6a5448a766a",
+      "uid" : "138b722771aaadef",
       "parentUid" : "4ebe86e7869cb240d4abca3cbf3899e8",
       "status" : "skipped",
       "time" : {
@@ -413,7 +413,7 @@
     "name" : "!-- And Write '<password>'",
     "children" : [ {
       "name" : "!-- And Write '<password>'",
-      "uid" : "e956c40c6ef7636a",
+      "uid" : "dfff3faa2b765705",
       "parentUid" : "4e84e7dd7522847fdb30c3816a47dcaf",
       "status" : "skipped",
       "time" : {
@@ -429,7 +429,7 @@
     "name" : "!-- And Customer click submit",
     "children" : [ {
       "name" : "!-- And Customer click submit",
-      "uid" : "3bdf4cb3a94bd8ff",
+      "uid" : "f78bf391ad55fbb2",
       "parentUid" : "b0f376378348f76f97d43f40a09ad704",
       "status" : "skipped",
       "time" : {
@@ -445,7 +445,7 @@
     "name" : "!-- And Customer hovers the mouse cursor over the username",
     "children" : [ {
       "name" : "!-- And Customer hovers the mouse cursor over the username",
-      "uid" : "28534cab22d1abc1",
+      "uid" : "9e2dfd0992e645ad",
       "parentUid" : "645501530fbe8e9dc72d1e1b56688c6e",
       "status" : "skipped",
       "time" : {
@@ -461,7 +461,7 @@
     "name" : "!-- And clicks 'my orders'",
     "children" : [ {
       "name" : "!-- And clicks 'my orders'",
-      "uid" : "902919070451f497",
+      "uid" : "937caca9690f26ad",
       "parentUid" : "8c628e2177e22ecf2eeadf4e6a8c78a1",
       "status" : "skipped",
       "time" : {
@@ -477,7 +477,7 @@
     "name" : "!-- And clicks 'cancel order'",
     "children" : [ {
       "name" : "!-- And clicks 'cancel order'",
-      "uid" : "28de2e0f2cffbafd",
+      "uid" : "27d1e48b462c1cf7",
       "parentUid" : "7b49a7abadcff711751bdc48e4a966e6",
       "status" : "skipped",
       "time" : {
@@ -493,7 +493,7 @@
     "name" : "!-- And click 'yes' in the order cancellation window to confirm",
     "children" : [ {
       "name" : "!-- And click 'yes' in the order cancellation window to confirm",
-      "uid" : "9f2b0734827ebc08",
+      "uid" : "2676c4a4168bdabc",
       "parentUid" : "585859dbfd866ae5193af2e522de0f80",
       "status" : "skipped",
       "time" : {
@@ -509,7 +509,7 @@
     "name" : "!-- Then Customer sees a cancellation message in front of your order",
     "children" : [ {
       "name" : "!-- Then Customer sees a cancellation message in front of your order",
-      "uid" : "373dca43e9cd227b",
+      "uid" : "9e1852fa68e48950",
       "parentUid" : "3c22e999ce630cd4389874813a63b3e1",
       "status" : "skipped",
       "time" : {
@@ -525,7 +525,7 @@
     "name" : "[PENDING] !--​​​​​​",
     "children" : [ {
       "name" : "[PENDING] !--​​​​​​",
-      "uid" : "df1c3a1d9a7e3765",
+      "uid" : "eb4a8b613c43f3ea",
       "parentUid" : "0d5991b4d3e26f60e5f6311989f3bb53",
       "status" : "skipped",
       "time" : {
@@ -541,7 +541,7 @@
     "name" : "[PENDING] !--​​​​​​​",
     "children" : [ {
       "name" : "[PENDING] !--​​​​​​​",
-      "uid" : "26fe0ef889257ae2",
+      "uid" : "dc30fd6b4f751a75",
       "parentUid" : "fe9a2aa30f07e1b2f284ae50a2bc2ed4",
       "status" : "skipped",
       "time" : {
@@ -557,7 +557,7 @@
     "name" : "[PENDING] !--​​​​​​​​",
     "children" : [ {
       "name" : "[PENDING] !--​​​​​​​​",
-      "uid" : "bca5049e5899eba3",
+      "uid" : "d53dbf7d24110f7f",
       "parentUid" : "067ddc296f8cf8792828bb4282a2e7c5",
       "status" : "skipped",
       "time" : {
@@ -573,7 +573,7 @@
     "name" : "[PENDING] !--​​​​​​​​​",
     "children" : [ {
       "name" : "[PENDING] !--​​​​​​​​​",
-      "uid" : "3c825d93fb20fbcf",
+      "uid" : "8971afb2ee9ebbea",
       "parentUid" : "8f2afe265ee5b26c0e7a45fe52aa44bd",
       "status" : "skipped",
       "time" : {
@@ -589,7 +589,7 @@
     "name" : "[PENDING] !--​​​​​​​​​​",
     "children" : [ {
       "name" : "[PENDING] !--​​​​​​​​​​",
-      "uid" : "1ae20f0b0adc1c33",
+      "uid" : "f7a1f633e1647432",
       "parentUid" : "3d19a9476dcac272c92d7c1be3fe67f3",
       "status" : "skipped",
       "time" : {
@@ -605,7 +605,7 @@
     "name" : "!-- Given Customer open site",
     "children" : [ {
       "name" : "!-- Given Customer open site",
-      "uid" : "35b1972aea8e76df",
+      "uid" : "251a657d6ac5c92d",
       "parentUid" : "b6f5710d5b05270f0acde0551b758b53",
       "status" : "skipped",
       "time" : {

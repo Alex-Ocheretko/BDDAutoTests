@@ -5,6 +5,9 @@ import net.thucydides.core.steps.ScenarioSteps;
 import page_object.*;
 
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import static org.assertj.core.api.Assertions.*;
 
 public class RozetkaSteps extends ScenarioSteps {
@@ -88,8 +91,18 @@ public class RozetkaSteps extends ScenarioSteps {
     }
 
     @Step
-    public void OrderNumberAveilable(){
-        makingAnOrderPage.OrderNumberAveilable();
+    public void orderNumberAvailable(){
+        makingAnOrderPage.orderNumberAvailable();
+    }
+
+    @Step
+    public void getOrderNumber() {
+        String orderNumber = makingAnOrderPage.getOrderNumber();
+        System.out.println(orderNumber);
+        Pattern pattern = Pattern.compile("[а-яА-Я]+\\s[0-9]{9}");
+        Matcher matcher = pattern.matcher(orderNumber);
+        boolean actual = matcher.matches();
+        assertThat(actual).isEqualTo(true);
     }
 
     @Step

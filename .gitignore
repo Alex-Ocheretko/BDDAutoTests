@@ -1,4 +1,6 @@
 $ Repa
 
 *.idea
-
+target
+.allure
+*.iml

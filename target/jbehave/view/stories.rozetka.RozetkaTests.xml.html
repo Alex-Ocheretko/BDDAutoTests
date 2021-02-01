@@ -12,15 +12,44 @@
 <meta>
 <property keyword="@" name="rozetka" value="tests"/>
 </meta>
-<scenario keyword="Scenario:" title="checking the possibility of sorting by price increase">
+<scenario keyword="Scenario:" title="checking the possibility of placing an order">
 <meta>
 <property keyword="@" name="test" value="run"/>
 </meta>
+<examples keyword="Examples:">
+<step>Given Customer open site</step>
+<step>When Customer click log in</step>
+<step>And Customer write &apos;&lt;mail&gt;&apos;</step>
+<step>And Write &apos;&lt;password&gt;&apos;</step>
+<step>And Customer click submit</step>
+<step>And Customer hovers the mouse cursor over &quot;smartphones, TV and electronics&quot; in the product catalog, which is located on the left side of the page</step>
+<step>And Customer clicks &quot;Smartphones&quot;</step>
+<step>And Customer clicks the cart on the first product</step>
+<step>And Customer clicks the cart on the header</step>
+<step>And Customer presses the &apos;place an order&apos; button</step>
+<step>And Customer selects the delivery point</step>
+<step>And Customer presses the order confirmation button</step>
+<step>Then Customer sees the order number</step>
+<parameters>
+<names><name>mail</name><name>password</name></names>
+<values><value>detotaj146@econeom.com</value><value>ttIEpExqjQmi1</value></values>
+</parameters>
+
+<example keyword="Example:">{mail=detotaj146@econeom.com, password=ttIEpExqjQmi1, rozetka=tests, test=run}</example>
 <step outcome="successful">Given Customer open site</step>
-<step outcome="successful">When Customer hovers the mouse cursor over &quot;smartphones, TV and electronics&quot; in the product catalog, which is located on the left side of the page</step>
+<step outcome="successful">When Customer click log in</step>
+<step outcome="successful">And Customer write &apos;<parameter>detotaj146@econeom.com</parameter>&apos;</step>
+<step outcome="successful">And Write &apos;<parameter>ttIEpExqjQmi1</parameter>&apos;</step>
+<step outcome="successful">And Customer click submit</step>
+<step outcome="successful">And Customer hovers the mouse cursor over &quot;smartphones, TV and electronics&quot; in the product catalog, which is located on the left side of the page</step>
 <step outcome="successful">And Customer clicks &quot;Smartphones&quot;</step>
-<step outcome="successful">And Customer sort by price in descending order</step>
-<step outcome="successful">Then goods are sorted by price increase</step>
+<step outcome="successful">And Customer clicks the cart on the first product</step>
+<step outcome="successful">And Customer clicks the cart on the header</step>
+<step outcome="successful">And Customer presses the &apos;place an order&apos; button</step>
+<step outcome="successful">And Customer selects the delivery point</step>
+<step outcome="successful">And Customer presses the order confirmation button</step>
+<step outcome="successful">Then Customer sees the order number</step>
+</examples>
 </scenario>
 </story>
 

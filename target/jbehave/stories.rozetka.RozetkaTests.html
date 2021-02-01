@@ -6,15 +6,51 @@
 <div class="property">@rozetka tests</div>
 </div>
 <div class="scenario">
-<h2>Scenario: checking the possibility of sorting by price increase</h2>
+<h2>Scenario: checking the possibility of placing an order</h2>
 <div class="meta">
 <div class="keyword">Meta:</div>
 <div class="property">@test run</div>
 </div>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given Customer open site</div>
+<div class="step">When Customer click log in</div>
+<div class="step">And Customer write '&lt;mail&gt;'</div>
+<div class="step">And Write '&lt;password&gt;'</div>
+<div class="step">And Customer click submit</div>
+<div class="step">And Customer hovers the mouse cursor over &quot;smartphones, TV and electronics&quot; in the product catalog, which is located on the left side of the page</div>
+<div class="step">And Customer clicks &quot;Smartphones&quot;</div>
+<div class="step">And Customer clicks the cart on the first product</div>
+<div class="step">And Customer clicks the cart on the header</div>
+<div class="step">And Customer presses the 'place an order' button</div>
+<div class="step">And Customer selects the delivery point</div>
+<div class="step">And Customer presses the order confirmation button</div>
+<div class="step">Then Customer sees the order number</div>
+<table>
+<thead>
+<tr>
+<th>mail</th><th>password</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>detotaj146@econeom.com</td><td>ttIEpExqjQmi1</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {mail=detotaj146@econeom.com, password=ttIEpExqjQmi1, rozetka=tests, test=run}</h3>
 <div class="step successful">Given Customer open site</div>
-<div class="step successful">When Customer hovers the mouse cursor over &quot;smartphones, TV and electronics&quot; in the product catalog, which is located on the left side of the page</div>
+<div class="step successful">When Customer click log in</div>
+<div class="step successful">And Customer write '<span class="step parameter">detotaj146@econeom.com</span>'</div>
+<div class="step successful">And Write '<span class="step parameter">ttIEpExqjQmi1</span>'</div>
+<div class="step successful">And Customer click submit</div>
+<div class="step successful">And Customer hovers the mouse cursor over &quot;smartphones, TV and electronics&quot; in the product catalog, which is located on the left side of the page</div>
 <div class="step successful">And Customer clicks &quot;Smartphones&quot;</div>
-<div class="step successful">And Customer sort by price in descending order</div>
-<div class="step successful">Then goods are sorted by price increase</div>
+<div class="step successful">And Customer clicks the cart on the first product</div>
+<div class="step successful">And Customer clicks the cart on the header</div>
+<div class="step successful">And Customer presses the 'place an order' button</div>
+<div class="step successful">And Customer selects the delivery point</div>
+<div class="step successful">And Customer presses the order confirmation button</div>
+<div class="step successful">Then Customer sees the order number</div>
+</div>
 </div>
 </div>

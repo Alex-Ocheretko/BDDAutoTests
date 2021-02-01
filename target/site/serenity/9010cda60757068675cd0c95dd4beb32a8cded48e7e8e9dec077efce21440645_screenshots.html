@@ -125,7 +125,7 @@
             <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 31-01-2021 15:58</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 31-01-2021 16:39</span>
     <br style="clear:left"/>
 </div>
 
@@ -160,9 +160,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="outcome-icon"><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></span>
                             <span class="test-case-title">
-                                <span class="success-color">checking the possibility of sorting by price increase
+                                <span class="failing-color">checking the possibility of sorting by price increase
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -179,26 +179,62 @@
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Element should be enabled exception: Expected enabled element was not enabled</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>page_object.MainPage.smartfonInHiddenMenuClick(MainPage.java:108)<br />steps.RozetkaSteps.smartfonInHiddenMenuClick(RozetkaSteps.java:56)<br />definitions.rozetka.RozetkaStepDefinitions.smartfonInHiddenMenuClick(RozetkaStepDefinitions.java:59)<br /></pre>
+                    </div>
+
+                    <h4>
+                        Caused by: org.openqa.selenium.TimeoutException
+                    </h4>
+                    <div>
+                            <pre>Expected condition failed: waiting for MainPage.smartfonInHiddenMenu to be enabled (tried for 4 second(s) with 100 milliseconds interval)</pre>
+                        <pre>page_object.MainPage.smartfonInHiddenMenuClick(MainPage.java :108)<br />steps.RozetkaSteps.smartfonInHiddenMenuClick(RozetkaSteps.java :56)<br />definitions.rozetka.RozetkaStepDefinitions.smartfonInHiddenMenuClick(RozetkaStepDefinitions.java :59)<br /></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="#" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="3aee4fd638cbc23e1e6d0533622fe9bd320162f4773c7ff77fd088767d50db9f.png" title=" Given Customer open site" width="1366"/>
-                <img src="3aee4fd638cbc23e1e6d0533622fe9bd320162f4773c7ff77fd088767d50db9f.png" title=" Open site" width="1366"/>
-                <img src="3aee4fd638cbc23e1e6d0533622fe9bd320162f4773c7ff77fd088767d50db9f.png" title=" Given Customer open site (completed)" width="1366"/>
-                <img src="b7ad31d0c19ff34f7458cbe29757e42048528a5b9c2f32becba55e512e83836c.png" title=" When Customer hovers the mouse cursor over &quot;smartphones, TV and electronics&quot; in the product catalog, which is located on the left side of the page" width="1366"/>
-                <img src="b7ad31d0c19ff34f7458cbe29757e42048528a5b9c2f32becba55e512e83836c.png" title=" Hovers mouse over smartphones tv electronics" width="1366"/>
-                <img src="b7ad31d0c19ff34f7458cbe29757e42048528a5b9c2f32becba55e512e83836c.png" title=" When Customer hovers the mouse cursor over &quot;smartphones, TV and electronics&quot; in the product catalog, which is located on the left side of the page (completed)" width="1366"/>
-                <img src="82352418ae7c68ad359465333166987b8b1e27452c5dd13670a8682dae05692a.png" title=" And Customer clicks &quot;Smartphones&quot;" width="1366"/>
-                <img src="82352418ae7c68ad359465333166987b8b1e27452c5dd13670a8682dae05692a.png" title=" Smartfon in hidden menu click" width="1366"/>
-                <img src="82352418ae7c68ad359465333166987b8b1e27452c5dd13670a8682dae05692a.png" title=" Smartfon in hidden menu click (completed)" width="1366"/>
-                <img src="82352418ae7c68ad359465333166987b8b1e27452c5dd13670a8682dae05692a.png" title=" And Customer clicks &quot;Smartphones&quot; (completed)" width="1366"/>
-                <img src="fef921681786ccb65d235ff3e858ec3b94d231cee14b701d43c9ad0521683ac7.png" title=" And Customer sort by price in descending order" width="1366"/>
-                <img src="fef921681786ccb65d235ff3e858ec3b94d231cee14b701d43c9ad0521683ac7.png" title=" Sort by price desc" width="1366"/>
-                <img src="5d31da8827ffacbf8f9b1cfa5e36a360ed0b7414a936c195baea6fe5702bde6f.png" title=" Sort by price desc" width="1366"/>
-                <img src="5d31da8827ffacbf8f9b1cfa5e36a360ed0b7414a936c195baea6fe5702bde6f.png" title=" Sort by price desc (completed)" width="1366"/>
-                <img src="5d31da8827ffacbf8f9b1cfa5e36a360ed0b7414a936c195baea6fe5702bde6f.png" title=" And Customer sort by price in descending order (completed)" width="1366"/>
-                <img src="199306e1e31c994b5e29147a0be60c6fb387703cb56c796d959cf67352e0e0f5.png" title=" Then goods are sorted by price increase" width="1366"/>
-                <img src="199306e1e31c994b5e29147a0be60c6fb387703cb56c796d959cf67352e0e0f5.png" title=" Check sorting by price" width="1366"/>
-                <img src="199306e1e31c994b5e29147a0be60c6fb387703cb56c796d959cf67352e0e0f5.png" title=" Then goods are sorted by price increase (completed): <span class='success-color'>SUCCESS</span>" width="1366"/>
+                <img src="fcdeeec457be7bfffb43190e46155fceb9d1981e2052ac3b2d4597caa593c79c.png" title=" Given Customer open site" width="1366"/>
+                <img src="fcdeeec457be7bfffb43190e46155fceb9d1981e2052ac3b2d4597caa593c79c.png" title=" Open site" width="1366"/>
+                <img src="fcdeeec457be7bfffb43190e46155fceb9d1981e2052ac3b2d4597caa593c79c.png" title=" Given Customer open site (completed)" width="1366"/>
+                <img src="faa92fb3ff0d037e999b25d23c52a9d98d63b707a955179d704cc2db6ae9e1ef.png" title=" When Customer hovers the mouse cursor over &quot;smartphones, TV and electronics&quot; in the product catalog, which is located on the left side of the page" width="1366"/>
+                <img src="faa92fb3ff0d037e999b25d23c52a9d98d63b707a955179d704cc2db6ae9e1ef.png" title=" Hovers mouse over smartphones tv electronics" width="1366"/>
+                <img src="faa92fb3ff0d037e999b25d23c52a9d98d63b707a955179d704cc2db6ae9e1ef.png" title=" When Customer hovers the mouse cursor over &quot;smartphones, TV and electronics&quot; in the product catalog, which is located on the left side of the page (completed)" width="1366"/>
+                <img src="faa92fb3ff0d037e999b25d23c52a9d98d63b707a955179d704cc2db6ae9e1ef.png" title=" And Customer clicks &quot;Smartphones&quot;" width="1366"/>
+                <img src="faa92fb3ff0d037e999b25d23c52a9d98d63b707a955179d704cc2db6ae9e1ef.png" title=" Smartfon in hidden menu click: <span class='failing-color'>FAILURE</span>" width="1366"/>
             </div>
         </div>
 

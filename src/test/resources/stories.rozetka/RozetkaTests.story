@@ -44,6 +44,7 @@ Then Customer sees the selected product in the cart
 
 
 Scenario: checking the possibility of placing an order
+Meta: @test run
 Given Customer open site
 When Customer click log in
 And Customer write '<mail>'
@@ -90,7 +91,7 @@ And Customer clicks "Smartphones"
 Then Castomer sees 60 orders on page
 
 Scenario: checking the possibility of sorting by price increase
-Meta: @test run
+Meta:
 Given Customer open site
 When Customer hovers the mouse cursor over "smartphones, TV and electronics" in the product catalog, which is located on the left side of the page
 And Customer clicks "Smartphones"
