@@ -22,6 +22,13 @@ public class UserCabinetPage extends PageObject {
     @FindBy(css = "ul[class='order-list']>li:nth-child(1) button:nth-child(2)")
     private WebElementFacade reorderButtonOfFirstProduct;
 
+    @FindBy(css = "[class='cabinet-user__name']")
+    private WebElementFacade userNameOnUserCabinetPage;
+
+    public String userNameOnUserCabinetPage() {
+       return userNameOnUserCabinetPage.getText();
+    }
+
     public boolean chevronDownButtonOfFirstProductVisibility(){
         return reorderButtonOfFirstProduct.isVisible();
     }

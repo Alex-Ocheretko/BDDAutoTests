@@ -13,7 +13,7 @@ public class MainPage extends PageObject {
 
     private SmartphonesPage smartphonesPage;
 
-    @FindBy(xpath = "//p/button")
+    @FindBy(xpath = "//rz-user/button")
     private WebElementFacade logIn;
 
     @FindBy(xpath = "//input[@type='email']")
@@ -25,16 +25,13 @@ public class MainPage extends PageObject {
     @FindBy(xpath = "//fieldset//button")
     private WebElementFacade submitLogInButton;
 
-    @FindBy(xpath = "//a[@class='header-topline__user-link']")
-    private WebElementFacade userNameOnHomePage;
-
     @FindBy(xpath = "//div[@class='menu-wrapper menu-wrapper_state_static']//a[contains(@href,'telefony-tv-i-ehlektronika')]")
     private WebElementFacade telefonyTvEhlektronikaMenuStatic;
 
     @FindBy(xpath = "//a[contains(@href,'preset=smartfon')]")
     private WebElementFacade smartfonInHiddenMenu;
 
-    @FindBy(xpath = "//li[@class='header-actions__item header-actions__item_type_cart']")
+    @FindBy(css = "button[class='header__button header__button--active']")
     private WebElementFacade cartOnHeader;
 
     @FindBy(xpath = "//a[@href='https://rozetka.com.ua/ua/cabinet/orders']")
@@ -49,31 +46,20 @@ public class MainPage extends PageObject {
     @FindBy(css = "input[id='auth_pass'][class='ng-dirty ng-touched ng-invalid']")
     private WebElementFacade errorMessageOfWrongPass;
 
-    @FindBy(css = "button[class*='header-actions__button header-actions__button_type_compare']")
+    @FindBy(css = "li[class='header-actions__item header-actions__item--comparison'] button")
     private WebElementFacade compareButtonOnHeader;
 
     @FindBy(css = "li[class='comparison-modal__item']")
     private WebElementFacade comparisonModelList;
+
+    @FindBy(css = "[class='header-actions__component']>[href$= '/cabinet/orders/']")
+    private WebElementFacade userCabinetButtonOnHeder;
 
     @WhenPageOpens
     public void maximiseScreen() {
         getDriver().manage().window().maximize();
     }
 
-
-    public void hoversMouseOverUserNameOnHomePage() {
-        Actions action = new Actions(getDriver());
-        action.moveToElement(userNameOnHomePage).perform();
-    }
-
-    public void myOrdersOnDropdownListClick() {
-        myOrdersOnDropdownList.click();
-    }
-
-    public void hoversMouseOversearchForm() {
-        Actions action = new Actions(getDriver());
-        action.moveToElement(searchFormOnHomePage);
-    }
 
     public void logInClikc() {
         logIn.click();
@@ -91,10 +77,6 @@ public class MainPage extends PageObject {
 
     public void pressLogInButton() {
         submitLogInButton.click();
-    }
-
-    public void chekUserName(String name) {
-        assertThat(userNameOnHomePage.getText()).isEqualTo(name);
     }
 
     public void hoversMouseOverSmartphonesTvElectronics() {
@@ -125,5 +107,9 @@ public class MainPage extends PageObject {
 
     public String getComparisonModelListURL() {
         return comparisonModelList.getAttribute("href");
+    }
+
+    public void userCabinetButtonOnHederClick() {
+        userCabinetButtonOnHeder.click();
     }
 }

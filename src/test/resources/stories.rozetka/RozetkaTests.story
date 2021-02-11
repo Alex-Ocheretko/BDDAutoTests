@@ -11,11 +11,12 @@ When Customer click log in
 And Customer write '<mail>'
 And Write '<password>'
 And Customer click submit
-Then Customer see '<userName>' on home page
+And Customer click cabinet button on heder
+Then Customer see '<userName>' on user cabinet page
 
 Examples:
-|   mail                   |    password        |   userName         |
-|   detotaj146@econeom.com |    ttIEpExqjQmi1   |  Никола Питерский  |
+|   mail                     |    password        |   userName         |
+|   oleksandr.o.ya@gmail.com |    ttIEpExqjQmi1   |  Никола Питерский  |
 
 Scenario: incorrect credentialіs to login
 Meta: @logInCheck
@@ -44,7 +45,6 @@ Then Customer sees the selected product in the cart
 
 
 Scenario: checking the possibility of placing an order
-Meta: @test run
 Given Customer open site
 When Customer click log in
 And Customer write '<mail>'
@@ -60,8 +60,8 @@ And Customer presses the order confirmation button
 Then Customer sees the order number
 
 Examples:
-|   mail                   |    password        |
-|   detotaj146@econeom.com |    ttIEpExqjQmi1   |
+|   mail                     |    password        |
+|   oleksandr.o.ya@gmail.com |    ttIEpExqjQmi1   |
 
 
 Scenario: checking the possibility of order cancellation
@@ -70,15 +70,14 @@ When Customer click log in
 And Customer write '<mail>'
 And Write '<password>'
 And Customer click submit
-And Customer hovers the mouse cursor over the username
-And clicks 'my orders'
+And Customer click cabinet button on heder
 And clicks 'cancel order'
 And click 'yes' in the order cancellation window to confirm
 Then Customer sees a cancellation message in front of your order
 
 Examples:
-|   mail                   |    password        |
-|   detotaj146@econeom.com |    ttIEpExqjQmi1   |
+|   mail                     |    password        |
+|   oleksandr.o.ya@gmail.com |    ttIEpExqjQmi1   |
 
 
 
@@ -96,6 +95,7 @@ And Customer sort by price in descending order
 Then goods are sorted by price increase
 
 Scenario: checking the work of comparing goods
+Meta: @test run
 Given Customer open site
 When Customer click log in
 And Customer write '<mail>'
@@ -108,8 +108,8 @@ And Customer clicks the compare button on heder
 Then Customer sees the two selected orders and can comparing them
 
 Examples:
-|   mail                   |    password        |
-|   detotaj146@econeom.com |    ttIEpExqjQmi1   |
+|   mail                     |    password        |
+|   oleksandr.o.ya@gmail.com |    ttIEpExqjQmi1   |
 
 
 

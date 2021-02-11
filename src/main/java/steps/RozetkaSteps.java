@@ -46,7 +46,7 @@ public class RozetkaSteps extends ScenarioSteps {
 
     @Step
     public void chekUserName(String name) {
-        mainPage.chekUserName(name);
+       assertThat(userCabinetPage.userNameOnUserCabinetPage()).isEqualTo(name);
     }
 
     @Step
@@ -104,22 +104,15 @@ public class RozetkaSteps extends ScenarioSteps {
         assertThat(actual).isTrue();
     }
 
-    @Step
-    public void hoversMouseOveruserNameOnHomePage() {
-        mainPage.hoversMouseOverUserNameOnHomePage();
-    }
+//    @Step
+//    public void hoversMouseOveruserNameOnHomePage() {
+//        mainPage.hoversMouseOverUserNameOnHomePage();
+//    }
 
-    @Step
-    public void pressMyOrdersOnDropdownList() {
-        mainPage.myOrdersOnDropdownListClick();
-
-        mainPage.hoversMouseOversearchForm();
-
-    }
 
     @Step
     public void pressCancelOrderButtonOfFirstProduct() {
-        if (userCabinetPage.chevronDownButtonOfFirstProductVisibility()) {
+        if (userCabinetPage.chevronDownButtonOfFirstProductVisibility() == false) {
             userCabinetPage.chevronDownButtonOfFirstProductClick();
         }
         userCabinetPage.cancelOrderButtonOfFirstProductClick();
@@ -205,5 +198,9 @@ public class RozetkaSteps extends ScenarioSteps {
         }
         assertThat(actual).isEqualTo(expected);
 
+    }
+
+    public void userCabinetButtonOnHederClick() {
+        mainPage.userCabinetButtonOnHederClick();
     }
 }

@@ -35,6 +35,12 @@ public class RozetkaStepDefinitions {
         testSteps.clickSubmitButton();
     }
 
+    @When("Customer click cabinet button on heder")
+    public void clickUserCabinetButtonOnHeder() {
+        testSteps.userCabinetButtonOnHederClick();
+    }
+
+
     @Then("Customer see error massege")
     public void errorMassegeVisibility() {
         if (testSteps.errorMessageOfWrongAmailVisibility())
@@ -44,7 +50,7 @@ public class RozetkaStepDefinitions {
         }
     }
 
-    @Then("Customer see '$userName' on home page")
+    @Then("Customer see '$userName' on user cabinet page")
     public void chekUserName(String name) {
         testSteps.chekUserName(name);
     }
@@ -95,15 +101,11 @@ public class RozetkaStepDefinitions {
         testSteps.getOrderNumber();
     }
 
-    @When("Customer hovers the mouse cursor over the username")
-    public void pressuserNameOnHomePage() {
-        testSteps.hoversMouseOveruserNameOnHomePage();
-    }
+//    @When("Customer hovers the mouse cursor over the username")
+//    public void pressuserNameOnHomePage() {
+//        testSteps.hoversMouseOveruserNameOnHomePage();
+//    }
 
-    @When("clicks 'my orders'")
-    public void pressMyOrdersOnLeftBar() {
-        testSteps.pressMyOrdersOnDropdownList();
-    }
 
     @When("clicks 'cancel order'")
     public void pressCancelOrderButtonOfFirstProduct() {
