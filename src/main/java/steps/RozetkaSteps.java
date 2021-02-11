@@ -4,7 +4,6 @@ import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
 import pageObject.*;
 
-
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -20,17 +19,17 @@ public class RozetkaSteps extends ScenarioSteps {
     private ComparisonPage comparisonPage;
 
     @Step
-    public void openSite(){
+    public void openSite() {
         mainPage.open();
     }
 
     @Step
     public void clickLogIn() {
-        mainPage.logInClikc();
+        mainPage.logInClick();
     }
 
     @Step
-    public void elmailWrite(String email) {
+    public void emailWrite(String email) {
         mainPage.writeEmail(email);
     }
 
@@ -46,11 +45,11 @@ public class RozetkaSteps extends ScenarioSteps {
 
     @Step
     public void chekUserName(String name) {
-       assertThat(userCabinetPage.userNameOnUserCabinetPage()).isEqualTo(name);
+        assertThat(userCabinetPage.userNameOnUserCabinetPage()).isEqualTo(name);
     }
 
     @Step
-    public void hoversMouseOverSmartphonesTvElectronics(){
+    public void hoversMouseOverSmartphonesTvElectronics() {
         mainPage.hoversMouseOverSmartphonesTvElectronics();
     }
 
@@ -75,8 +74,8 @@ public class RozetkaSteps extends ScenarioSteps {
     }
 
     @Step
-    public void pressOrderConfirmationBatton() {
-        makingAnOrderPage.orderConfirmationBattonClick();
+    public void pressMakingAnOrderButton() {
+        makingAnOrderPage.makingAnOrderButtonClick();
     }
 
     @Step
@@ -91,11 +90,6 @@ public class RozetkaSteps extends ScenarioSteps {
     }
 
     @Step
-    public void orderNumberAvailable(){
-        makingAnOrderPage.orderNumberAvailable();
-    }
-
-    @Step
     public void getOrderNumber() {
         String orderNumber = makingAnOrderPage.getOrderNumber();
         Pattern pattern = Pattern.compile("[а-яА-Я]+\\s[0-9]{9}");
@@ -103,12 +97,6 @@ public class RozetkaSteps extends ScenarioSteps {
         boolean actual = matcher.matches();
         assertThat(actual).isTrue();
     }
-
-//    @Step
-//    public void hoversMouseOveruserNameOnHomePage() {
-//        mainPage.hoversMouseOverUserNameOnHomePage();
-//    }
-
 
     @Step
     public void pressCancelOrderButtonOfFirstProduct() {
@@ -124,15 +112,15 @@ public class RozetkaSteps extends ScenarioSteps {
     }
 
     @Step
-    public void firstOrderStatusCheсkVisibility() {
+    public void firstOrderStatusCheckVisibility() {
         getDriver().navigate().refresh();
         userCabinetPage.firstOrderStatusVisibility();
         userCabinetPage.reorderButtonOfFirstProductVisibility();
     }
 
     @Step
-    public boolean errorMessageOfWrongAmailVisibility() {
-        return mainPage.errorMessageOfWrongAmailVisibility();
+    public boolean errorMessageOfWrongEmailVisibility() {
+        return mainPage.errorMessageOfWrongEmailVisibility();
     }
 
     @Step
@@ -146,13 +134,13 @@ public class RozetkaSteps extends ScenarioSteps {
     }
 
     @Step
-    public void pressCompareButtonOfFirstProdact() {
-        smartphonesPage.compareButtonOfFirstProdactClick();
+    public void pressCompareButtonOfFirstProduct() {
+        smartphonesPage.compareButtonOfFirstProductClick();
     }
 
     @Step
-    public void pressCompareButtonOfSecondProdact() {
-        smartphonesPage.compareButtonOfSecondProdactClick();
+    public void pressCompareButtonOfSecondProduct() {
+        smartphonesPage.compareButtonOfSecondProductClick();
     }
 
     @Step
@@ -175,32 +163,33 @@ public class RozetkaSteps extends ScenarioSteps {
     }
 
     @Step
-    public void sortByPriceDesc(){
+    public void sortByPriceDesc() {
         smartphonesPage.dropDownOfSortButtonClick();
         smartphonesPage.sortByPriceDescButtonClick();
     }
 
     @Step
     public void checkSortingByPrice() {
-        boolean expected = true;
-        boolean actual = false;
+        boolean actual = true;
 
-        for (int i = 0; i < smartphonesPage.getPriceTagsOfGoods().size()-1; i++) {
-            int first = Integer.parseInt(smartphonesPage.getPriceTagsOfGoods().get(i).getText().replaceAll("\\s+",""));
-            int second = Integer.parseInt(smartphonesPage.getPriceTagsOfGoods().get(i+1).getText().replaceAll("\\s+",""));
-            if (first >= second) {
-                if (smartphonesPage.getPriceTagsOfGoods().size()-2 == i) {
-                    actual = true;
-                }
-            } else {
+        for (int i = 0; i < smartphonesPage.getPriceTagsOfGoods().size() - 2; i++) {
+            int priceOfFirstOrder = getPriceOfOrder(i);
+            int priceOfSecondOrder = getPriceOfOrder(i + 1);
+            if (priceOfFirstOrder < priceOfSecondOrder) {
                 actual = false;
+
             }
         }
-        assertThat(actual).isEqualTo(expected);
+        assertThat(actual).isTrue();
 
     }
 
-    public void userCabinetButtonOnHederClick() {
-        mainPage.userCabinetButtonOnHederClick();
+    @Step
+    public void userCabinetButtonOnHeaderClick() {
+        mainPage.userCabinetButtonOnHeaderClick();
+    }
+
+    private int getPriceOfOrder(int i) {
+        return Integer.parseInt(smartphonesPage.getPriceTagsOfGoods().get(i).getText().replaceAll("\\s+", ""));
     }
 }

@@ -14,7 +14,7 @@ public class CartWindow extends PageObject {
     @FindBy(xpath = "//a[@class='cart-product__title']")
     private WebElementFacade selectedProduct;
 
-    @FindBy(xpath = "//button[@class=\'modal__close\']")
+    @FindBy(xpath = "//button[@class='modal__close']")
     private WebElementFacade closeCartButton;
 
     public void selectedProductAvailable() {

@@ -4,15 +4,13 @@ import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
 
-
-
 public class MakingAnOrderPage extends PageObject {
 
     @FindBy(xpath = "//a[@class='button button_size_large button_color_green cart-receipt__submit']")
-    private WebElementFacade makingAnOrderBatton;
+    private WebElementFacade makingAnOrderButton;
 
     @FindBy(xpath = "//button[@class='button dropdown-button']")
-    private WebElementFacade dropdownBottonOfDeliveryPoints;
+    private WebElementFacade dropdownButtonOfDeliveryPoints;
 
     @FindBy(xpath = "//ul[@class='autocomplete__list-inner']/li[1]")
     private WebElementFacade firstDeliveryPoint;
@@ -26,16 +24,12 @@ public class MakingAnOrderPage extends PageObject {
     @FindBy(xpath = "//button[@class='button button--medium button--navy']")
     private WebElementFacade reOrderButton;
 
-    public void reOrderButtonClick(){
-        reOrderButton.click();
-    }
-
-    public void orderConfirmationBattonClick() {
-        makingAnOrderBatton.click();
+    public void makingAnOrderButtonClick() {
+        makingAnOrderButton.click();
     }
 
     public void selectFirstDeliveryPoint() {
-        dropdownBottonOfDeliveryPoints.click();
+        dropdownButtonOfDeliveryPoints.click();
         firstDeliveryPoint.click();
     }
 
@@ -47,8 +41,8 @@ public class MakingAnOrderPage extends PageObject {
         orderNumber.isVisible();
     }
 
-    public String getOrderNumber(){
-       return orderNumber.getText();
+    public String getOrderNumber() {
+        return orderNumber.getText();
     }
 
     public void reOrderButton() {

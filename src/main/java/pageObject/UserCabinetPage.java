@@ -6,7 +6,6 @@ import net.serenitybdd.core.pages.WebElementFacade;
 
 public class UserCabinetPage extends PageObject {
 
-
     @FindBy(css = "div[class='order-heading order-heading_status_new']")
     private WebElementFacade buttonOfFirstProductAtMyOrders;
 
@@ -26,10 +25,10 @@ public class UserCabinetPage extends PageObject {
     private WebElementFacade userNameOnUserCabinetPage;
 
     public String userNameOnUserCabinetPage() {
-       return userNameOnUserCabinetPage.getText();
+        return userNameOnUserCabinetPage.getText();
     }
 
-    public boolean chevronDownButtonOfFirstProductVisibility(){
+    public boolean chevronDownButtonOfFirstProductVisibility() {
         return reorderButtonOfFirstProduct.isVisible();
     }
 
@@ -52,8 +51,4 @@ public class UserCabinetPage extends PageObject {
     public void reorderButtonOfFirstProductVisibility() {
         reorderButtonOfFirstProduct.isVisible();
     }
-
-
-
-
 }

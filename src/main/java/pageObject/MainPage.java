@@ -6,9 +6,6 @@ import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.WhenPageOpens;
 import org.openqa.selenium.interactions.Actions;
 
-import static org.assertj.core.api.Assertions.*;
-
-
 public class MainPage extends PageObject {
 
     private SmartphonesPage smartphonesPage;
@@ -17,7 +14,7 @@ public class MainPage extends PageObject {
     private WebElementFacade logIn;
 
     @FindBy(xpath = "//input[@type='email']")
-    private WebElementFacade emeilInput;
+    private WebElementFacade emailInput;
 
     @FindBy(xpath = "//input[@type='password']")
     private WebElementFacade passwordInput;
@@ -41,7 +38,7 @@ public class MainPage extends PageObject {
     private WebElementFacade searchFormOnHomePage;
 
     @FindBy(css = "p[class='error-message']")
-    private WebElementFacade errorMessageOfWrongAmail;
+    private WebElementFacade errorMessageOfWrongEmail;
 
     @FindBy(css = "input[id='auth_pass'][class='ng-dirty ng-touched ng-invalid']")
     private WebElementFacade errorMessageOfWrongPass;
@@ -53,21 +50,20 @@ public class MainPage extends PageObject {
     private WebElementFacade comparisonModelList;
 
     @FindBy(css = "[class='header-actions__component']>[href$= '/cabinet/orders/']")
-    private WebElementFacade userCabinetButtonOnHeder;
+    private WebElementFacade userCabinetButtonOnHeader;
 
     @WhenPageOpens
     public void maximiseScreen() {
         getDriver().manage().window().maximize();
     }
 
-
-    public void logInClikc() {
+    public void logInClick() {
         logIn.click();
     }
 
     public void writeEmail(String email) {
-        emeilInput.click();
-        emeilInput.sendKeys(email);
+        emailInput.click();
+        emailInput.sendKeys(email);
     }
 
     public void writePassword(String password) {
@@ -92,12 +88,12 @@ public class MainPage extends PageObject {
         cartOnHeader.click();
     }
 
-    public boolean errorMessageOfWrongAmailVisibility() {
-        return errorMessageOfWrongAmail.isVisible();
+    public boolean errorMessageOfWrongEmailVisibility() {
+        return errorMessageOfWrongEmail.isVisible();
     }
 
     public boolean errorMessageOfWrongPassVisibility() {
-       return errorMessageOfWrongPass.isVisible();
+        return errorMessageOfWrongPass.isVisible();
     }
 
     public void compareButtonOnHeaderClick() {
@@ -105,11 +101,7 @@ public class MainPage extends PageObject {
         comparisonModelList.click();
     }
 
-    public String getComparisonModelListURL() {
-        return comparisonModelList.getAttribute("href");
-    }
-
-    public void userCabinetButtonOnHederClick() {
-        userCabinetButtonOnHeder.click();
+    public void userCabinetButtonOnHeaderClick() {
+        userCabinetButtonOnHeader.click();
     }
 }

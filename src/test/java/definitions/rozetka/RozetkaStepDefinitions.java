@@ -11,7 +11,7 @@ public class RozetkaStepDefinitions {
 
 
     @Given("Customer open site")
-    public void openSite(){
+    public void openSite() {
         testSteps.openSite();
     }
 
@@ -21,8 +21,8 @@ public class RozetkaStepDefinitions {
     }
 
     @When("Customer write '$mail'")
-    public void elmailWrite(String emeil) {
-        testSteps.elmailWrite(emeil);
+    public void emailWrite(String email) {
+        testSteps.emailWrite(email);
     }
 
     @When("Write '$password'")
@@ -35,16 +35,16 @@ public class RozetkaStepDefinitions {
         testSteps.clickSubmitButton();
     }
 
-    @When("Customer click cabinet button on heder")
-    public void clickUserCabinetButtonOnHeder() {
-        testSteps.userCabinetButtonOnHederClick();
+    @When("Customer click cabinet button on header")
+    public void clickUserCabinetButtonOnHeader() {
+        testSteps.userCabinetButtonOnHeaderClick();
     }
 
 
-    @Then("Customer see error massege")
-    public void errorMassegeVisibility() {
-        if (testSteps.errorMessageOfWrongAmailVisibility())
-            testSteps.errorMessageOfWrongAmailVisibility();
+    @Then("Customer see error message")
+    public void errorMessageVisibility() {
+        if (testSteps.errorMessageOfWrongEmailVisibility())
+            testSteps.errorMessageOfWrongEmailVisibility();
         if (testSteps.errorMessageOfWrongPassVisibility()) {
             testSteps.errorMessageOfWrongPassVisibility();
         }
@@ -55,12 +55,12 @@ public class RozetkaStepDefinitions {
         testSteps.chekUserName(name);
     }
 
-    @When("Customer hovers the mouse cursor over \"smartphones, TV and electronics\" in the product catalog, which is located on the left side of the page")
+    @When("Customer hovers the mouse cursor over 'smartphones, TV and electronics' in the product catalog, which is located on the left side of the page")
     public void hoversMouseOverSmartphonesTvElectronics() {
         testSteps.hoversMouseOverSmartphonesTvElectronics();
     }
 
-    @When("Customer clicks \"Smartphones\"")
+    @When("Customer clicks 'Smartphones'")
     public void smartfonInHiddenMenuClick() {
         testSteps.smartfonInHiddenMenuClick();
     }
@@ -76,13 +76,13 @@ public class RozetkaStepDefinitions {
     }
 
     @Then("Customer sees the selected product in the cart")
-    public void selectedProductAvailable(){
+    public void selectedProductAvailable() {
         testSteps.selectedProductAvailable();
     }
 
     @When("Customer presses the 'place an order' button")
-    public void pressOrderConfirmationBatton() {
-        testSteps.pressOrderConfirmationBatton();
+    public void pressMakingAnOrderButton() {
+        testSteps.pressMakingAnOrderButton();
     }
 
     @When("Customer selects the delivery point")
@@ -91,21 +91,14 @@ public class RozetkaStepDefinitions {
     }
 
     @When("Customer presses the order confirmation button")
-    public void pressOrderConfirmationButton(){
+    public void pressOrderConfirmationButton() {
         testSteps.pressOrderConfirmationButton();
     }
 
     @Then("Customer sees the order number")
     public void OrderNumberAvailable() {
-//        testSteps.orderNumberAvailable();
         testSteps.getOrderNumber();
     }
-
-//    @When("Customer hovers the mouse cursor over the username")
-//    public void pressuserNameOnHomePage() {
-//        testSteps.hoversMouseOveruserNameOnHomePage();
-//    }
-
 
     @When("clicks 'cancel order'")
     public void pressCancelOrderButtonOfFirstProduct() {
@@ -118,22 +111,22 @@ public class RozetkaStepDefinitions {
     }
 
     @Then("Customer sees a cancellation message in front of your order")
-    public void firstOrderStatusCheсkVisibility() {
-        testSteps.firstOrderStatusCheсkVisibility();
+    public void firstOrderStatusCheckVisibility() {
+        testSteps.firstOrderStatusCheckVisibility();
     }
 
-    @Then("Castomer sees 60 orders on page")
+    @Then("Customer sees 60 orders on page")
     public void checkQuantityOfGoodsOnSmartphonesPage() {
         testSteps.checkQuantityOfGoodsOnSmartphonesPage();
     }
 
     @When("Customer clicks the compare buttons on two firsts products")
-    public void pressCompareButtonProdacts() {
-        testSteps.pressCompareButtonOfFirstProdact();
-        testSteps.pressCompareButtonOfSecondProdact();
+    public void pressCompareButtonProducts() {
+        testSteps.pressCompareButtonOfFirstProduct();
+        testSteps.pressCompareButtonOfSecondProduct();
     }
 
-    @When("Customer clicks the compare button on heder")
+    @When("Customer clicks the compare button on header")
     public void pressCompareButtonOnHeader() {
         testSteps.pressCompareButtonOnHeader();
     }
@@ -148,7 +141,7 @@ public class RozetkaStepDefinitions {
         testSteps.sortByPriceDesc();
     }
 
-    @Then("goods are sorted by price increase")
+    @Then("goods are sorted by price desc")
     public void checkSortingByPrice() {
         testSteps.checkSortingByPrice();
     }

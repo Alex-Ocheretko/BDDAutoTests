@@ -23,10 +23,10 @@ public class SmartphonesPage extends PageObject {
     private List<WebElementFacade> ordersOnPage;
 
     @FindBy(css = "ul li:nth-child(1) button[class='compare-button']")
-    private WebElementFacade compareButtonOfFirstProdact;
+    private WebElementFacade compareButtonOfFirstProduct;
 
     @FindBy(css = "ul li:nth-child(2) button[class='compare-button']")
-    private WebElementFacade compareButtonOfSecondProdact;
+    private WebElementFacade compareButtonOfSecondProduct;
 
     @FindBy(css = "rz-sort>select")
     private WebElementFacade dropDownOfSortButton;
@@ -49,21 +49,17 @@ public class SmartphonesPage extends PageObject {
         firstProductCurtButton.click();
     }
 
-    public List<WebElementFacade> getResults() {
-        return ordersOnPage;
-    }
-
     public void checkQuantityOfGoodsOnSmartphonesPage() {
         List<WebElementFacade> number = ordersOnPage;
         assertThat(60).isEqualTo(number.size());
     }
 
-    public void compareButtonOfFirstProdactClick() {
-        compareButtonOfFirstProdact.click();
+    public void compareButtonOfFirstProductClick() {
+        compareButtonOfFirstProduct.click();
     }
 
-    public void compareButtonOfSecondProdactClick() {
-        compareButtonOfSecondProdact.click();
+    public void compareButtonOfSecondProductClick() {
+        compareButtonOfSecondProduct.click();
     }
 
     public void dropDownOfSortButtonClick() {
